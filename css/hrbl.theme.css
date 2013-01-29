@@ -1,0 +1,337 @@
+/* Table of Contents
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Colors
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Forms
+	#Tables
+	#Misc
+	#Non semantic helper classes
+	#Print styles */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, button, input, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+	body { line-height: 1; }
+	ol, ul { list-style: none; }
+	blockquote, q { quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after { content: ''; content: none; }
+	table { border-collapse:collapse; border-spacing:0; }
+	td { vertical-align:top; }
+
+
+/* #Basic Styles
+================================================== */
+	body {
+	background: #FFF;
+	font-size: 12px;
+	line-height: 19px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+ 	}
+/*  This section of selectors is for absolute positioning the footer on the bottom */
+ 	html, body { height:100%; }
+	#wrap { min-height:100%; position:relative; }
+	.ie6 #wrap { height:100%; }
+	#wrap > .container { 
+		padding-bottom:50px; /* For footer */
+		padding-top:50px; /* For header */
+	}
+	#wrap > i > .container { /* For some reason I keep getting an <i> tag wrapping around my <footer> or <div> tag above footer, so this should help pad footer with that issue */
+		padding-bottom:50px; /* For footer */
+		padding-top:50px; /* For header */
+	}
+	footer { position:relative; bottom:0; }
+
+
+/* #Colors
+================================================== */
+
+/* Brand Colors */
+.green 			{ color:#7AC143; }	/* Herbalife Brand Green */
+.orange 		{ color:#FAA634; }	/* Herbalife Brand Orange */
+
+/* Alternate Colors */
+.darkgreen 		{ color:#387C28; }
+.brightgreen 	{ color:#87D54A; }
+.lightgreen 	{ color:#DBF5C8; }
+.lightorange	{ color:#FFF2DE; }
+
+/* Greyscale Colors */
+.black 			{ color:#000000; }
+.darkgrey		{ color:#2e2e2e; }
+.charcoalgrey	{ color:#515151; }
+.grey			{ color:#CCCCCC; }
+.lightgrey		{ color:#f3f3f3; }
+.white 			{ color:#FFFFFF; }
+
+
+/* #Z-index of major elements
+================================================== */
+	/* Modal */
+	.reveal-modal 				{ z-index:601; }
+	.reveal-modal-bg			{ z-index:600; }
+
+	/* Navigation */
+	header 						{ z-index:400; }
+
+
+/* #Typography
+================================================== */
+	
+/*	Headings  */
+	h1, h2, h3, h4, h5, h6 {
+	color: #FFF;
+	font-weight: bold;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	line-height: 1.1;
+	margin-bottom: 20px;
+	margin-top: 0px;
+} 
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight:inherit; }
+	h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size:70%; font-weight:normal; }
+	h1 { font-size:46px; }
+	h2 { font-size:35px; }
+	h3 { font-size:28px; }
+	h4 { font-size:19px; text-transform:uppercase; }
+	h5 { font-size:14px; font-weight:normal; margin:0 0 7px; }
+	h6 { font-size:14px; text-transform:uppercase; font-weight:normal; margin:0 0 7px; }
+	.subheader { color: #999; }
+
+
+/*	Paragraphs  */
+	p { margin: 0 0 12px 0; line-height:20px; }
+	p img { margin: 0; }
+	p.lead {
+	font-size: 20px;
+	line-height: 27px;
+	color: #333;
+}
+
+/*	Emphasis  */
+	em { font-style: italic; }
+	strong {
+	font-weight: bold;
+	color: #333;
+}
+	small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size:17px; line-height:20px; color:#999; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left:5px solid #f3f3f3; }
+	blockquote p { margin:0; }
+	blockquote cite { display: block; font-size:13px; color:#999; font-style:normal; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color:#CCC; }
+
+/*	Code  */
+	code, pre { padding: 0 3px 2px; font-family: Menlo, Monaco, "Courier New", monospace; font-size:13px; color:#555; -webkit-border-radius:3px; border-radius:3px; }
+	code { padding: 3px 4px; color: #d14; background-color: #f7f7f9; border: 1px solid #e1e1e8; }
+	pre { display:block; padding:10px; margin: 0 0 10px; font-size: 12px; line-height: 20px; background-color: #f5f5f5; border: 1px solid #ccc; // fallback for IE7-8 border: 1px solid rgba(0,0,0,.15);
+		-webkit-border-radius:4px; border-radius:4px;
+		white-space: pre;
+		white-space: pre-wrap;
+		word-break: break-all;
+	}
+
+/*	Address  */
+	address { display: block; margin-bottom:20px; line-height:20px; font-style: normal; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color:#7AC143; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color:#7AC143; }
+	p a, p a:visited { line-height: inherit; }
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: uses Herbalife green! (or customize the background color to match your design)
+ */
+::-moz-selection { background:#7AC143; color:#FFF; text-shadow: none; }
+::selection { background:#7AC143; color:#FFF; text-shadow: none; }
+
+
+/* #Lists
+================================================== */
+
+/* Unordered and Ordered lists */
+ul, ol { padding: 0; margin: 0 0 10px 25px; }
+ul ul,
+ul ol,
+ol ol,
+ol ul { margin-bottom: 0; }
+ul { list-style: none; margin: 0px; padding: 0px; }
+ol { list-style: decimal; }
+li { line-height:20px }
+ul.unstyled { margin-left: 0; list-style: none; }
+
+/* Description Lists */
+dl { margin-bottom:20px; }
+dt, dd { line-height:20px; }
+dt { font-weight: bold; }
+dd { margin-left:10px; }
+
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid { max-width: 100%; height: auto; }
+
+
+/* #Forms
+================================================== */
+
+	form { margin-bottom: 20px; }
+	fieldset { margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		color:#555;
+		margin: 0 0 20px;
+		width: 220px; /* 220px = .col3 on the grid */
+		max-width: 100%;
+		display: block;
+		float:none;
+		background:#FFF;
+		-moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+	
+	input[type="file"] { width:220px; margin:0 0 20px; display:block; }
+	input, textarea, select { font-size:inherit; font-weight:normal; }
+	input:hover :not([type="file"]:hover) :not([type="submit"]:hover), textarea:hover, select:hover { border:1px solid #7AC143; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus { border: 1px solid #CCC; color:#555; background:#f3f3f3;
+ 		-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.2);
+ 		-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.2);
+		box-shadow:inset 0 1px 2px rgba(0,0,0,.2); }
+	textarea { min-height:60px; overflow:auto; vertical-align:top; resize:vertical; }
+	label,
+	legend { display: block; font-weight: bold; font-size:14px; }
+	select { width:220px; background:#FFF url(../images/dropdown-arrow.png) no-repeat right 0; -webkit-appearance:none; }
+	select:hover { background:#FFF url(../images/dropdown-arrow.png) no-repeat right -21px; }
+	input[type="checkbox"] { display:inline; }
+	label span,
+	legend span { font-weight:normal; font-size:14px; color:#999; }
+
+	/* Horizontal Forms */
+	.hrblHForm input, .hrblHForm label, .hrblHForm textarea, .hrblHForm select { float:left; }
+	.hrblHForm label { text-align:right; margin-right:20px; width:140px;/* 140px = .col2 on the grid */ }
+	.hrblHForm label, .hrblHForm fieldset { clear:left; }
+	.hrblHForm fieldset > legend { float:left; text-align:right; margin-right:20px; width:140px; }
+	.hrblHForm fieldset > label { float:none; text-align:left; margin:0 0 0 160px; display:table-row; }
+	.hrblHForm input[type="checkbox"], .hrblHForm input[type="radio"] { float:none; margin-right:5px; }
+	.hrblHForm fieldset.hrblFormsButtons { margin-left:160px; }
+
+	/* Form errors */
+	form input.error { border:1px solid red; background:#FFCCCC; margin-bottom:2px; }
+	form span.error { color:red; }
+	.hrblHForm span.error { float:left; margin-left:160px; }
+
+	/* Grid style input sizes */
+	input[class*="col"],
+	select[class*="col"],
+	textarea[class*="col"],
+	.uneditable-input { float:none; }
+
+
+/* #Tables
+================================================== */
+
+	table { margin-bottom: 1.4em; width:100%; }
+	table h1, table h2, table h3, table h4, table h5, table h6 { margin:0; padding:0 }
+	th { border-bottom: 2px solid #CCC; font-weight: bold; }
+	td { border-bottom: 1px solid #CCC; }
+	td:first-child, th:first-child { padding-left:10px; }
+	th,td { padding: 5px 10px 5px 0px; vertical-align:middle; text-align:left; }
+	caption { background: #ffc; }
+
+	/* Grid style table cell sizes */
+	table [class*="span"] {
+		float: none;
+		margin-left: 0;
+		display:static;
+	}
+
+
+/* #Misc
+================================================== */
+
+	hr { border: dotted #CCC; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
+	.muted { color:#555; }
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color:#000 !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

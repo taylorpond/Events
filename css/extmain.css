@@ -1,0 +1,209 @@
+.extdividerhor {
+	background-image: url(../images/divider_h_fade.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	}
+
+.hrblimg {
+	border: medium solid #FF0;	
+	}
+
+
+.logo{
+	float:left;
+
+
+	
+	
+}
+
+.logo h2{
+	float: left;
+	margin: auto auto auto 5px;
+	
+	
+}
+.logo img{
+	float: left;
+	height: 40px;
+	
+}
+
+.section{
+		padding: 20px 0px 10px 0px;
+	
+}
+
+section.one { background:none;
+	}
+	
+	
+section.two {
+	box-shadow: inset 0 30px 70px rgba(0,0,0,.2);
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #3382D1;
+	background: #00417C;
+	color: #fff;
+	}
+	
+	
+section.three {
+	background: #00417C;
+	color: #fff;
+	/*use bkg linear background*/
+	/*box-shadow: inset 0 150px 250px rgba(0,0,0,.5);*/
+	}
+	
+section.four {
+	background: #555;
+	color: #fff;
+	/*use bkg linear background*/
+	/*box-shadow: inset 0 150px 250px rgba(0,0,0,.5);*/
+	}
+	
+h1.section, h2.section, h3.section, h4.section, h5.section { margin-top: 20px;}
+
+body.blue{
+background-color: #67B3E7;
+}
+
+body,td,th: {color: #FFF;
+}
+
+.main-logo{
+
+	position: fixed;
+	margin: 0px 0px 0px 410px;
+	top: 5px;
+	}
+
+.slides{
+
+	height:300px;
+	background-color: white;
+	box-shadow: #414769 0px 0px 5px;
+	margin: 110px 0px 0px 0px;
+	}
+
+.line-two{
+	font-size: 10px;
+	padding: 0pc 5px 0px 1px;
+	}
+
+img.countdown{
+	margin: 1px 10px 0px 0px; 
+	}
+
+.btn.buynow{
+top: 1px
+}
+
+
+
+
+.image-container{
+	
+	height: 110px;
+	width: 110px;
+	display: block;
+	position: relative;
+	border: white solid 2px;
+	
+	
+	
+	
+}
+
+.first.speaker .image-container{
+	background-image: url('../images/img-deswalsh.jpg');
+	background-size: 100% auto;
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+	box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+	
+	
+}
+
+.second.speaker .image-container{
+	background-image: url('../images/img-michaeljohnson.jpg');
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+	box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+	
+	
+}
+
+.last.speaker .image-container{
+	background-image: url('../images/img-rociomedina.jpg');
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+	box-shadow: 0px 0px 3px rgba(0,0,0,1.5);
+
+	
+}
+
+
+.image-border{
+	height: 110px;
+	width: 110px;
+	background-color: #ffbe00;
+	display: block;
+	padding: 5px 09px 09px 5px;
+	margin: 0px 0px 0px 0px;
+	-moz-box-shadow: 2px -1px 6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 2px -1px 6px rgba(0,0,0,0.5);
+	box-shadow: 2px -1px 6px rgba(0,0,0,0.5);
+}	
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	
+	border-top: 8px solid #ffbe00;
+	margin: 0px 0px 15px 10px;
+}
+	
+
+
+footer{
+	background-image:url(../images/bg-footer.jpg);
+	
+	
+}
+
+
+
+
+.content li{
+	margin: 5px 0px 5px 0px;
+	display: inline-block;
+	float: left;
+	padding: 0px;
+	width: 190px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+		
+}
+
+.content i{
+	float: left;
+	width: 20px;
+	display: block;
+	height: 20px;
+	
+	
+}
+	
+.content li p{
+	display: block;
+	float: left;
+	width: 152px
+}
+
+
+/*--- EXT NAV */
+
+
+
+
+
