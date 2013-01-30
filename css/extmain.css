@@ -41,7 +41,7 @@ section#one { background:none;
 	
 section#two {
 	box-shadow: inset 0 30px 70px rgba(0,0,0,.2);
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid darkgray;
 	border-top: 1px solid #3382D1;
 	background: #00417C;
 	color: #fff;
@@ -49,21 +49,27 @@ section#two {
 	
 	
 section#three {
-	background: #00417C;
+	background: #002047;
 	color: #fff;
 	/*use bkg linear background*/
 	/*box-shadow: inset 0 150px 250px rgba(0,0,0,.5);*/
+	
 	}
 	
 section#four {
-	background: #555;
+	background: #001027;
 	color: #fff;
 	/*use bkg linear background*/
 	/*box-shadow: inset 0 150px 250px rgba(0,0,0,.5);*/
+	padding-bottom: 40px
+	
+	
 	}
 	
-h1.section, h2.section, h3.section, h4.section, h5.section { margin-top: 20px;}
-
+	
+section h2{
+color: #ffffff;
+text-shadow:0px 0px 0 rgb(187,187,187), 1px 1px 0 rgb(133,133,133),2px 2px 1px rgba(0,0,0,0.1),2px 2px 1px rgba(0,0,0,0.5),0px 0px 1px rgba(0,0,0,.2);}
 body.blue{
 background-color: #67B3E7;
 }
@@ -75,7 +81,7 @@ body,td,th: {color: #FFF;
 
 	position: fixed;
 	margin: 0px 0px 0px 375px;
-	top: 2px;
+	top: 5px;
 	}
 
 .slides{
@@ -83,7 +89,7 @@ body,td,th: {color: #FFF;
 	height:300px;
 	background-color: white;
 	box-shadow: #414769 0px 0px 5px;
-	margin: 104px 0px 0px 0px;
+	margin: 125px 0px 20px 0px;
 	}
 
 .line-two{
@@ -114,6 +120,8 @@ top: 1px
 	
 	
 }
+
+
 
 .first.speaker .image-container{
 	background-image: url('../images/img-deswalsh.jpg');
@@ -181,8 +189,9 @@ footer{
 	display: inline-block;
 	float: left;
 	padding: 0px;
-	width: 190px;
+	width: 280px;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
+	
 		
 }
 
@@ -191,8 +200,10 @@ footer{
 	width: 20px;
 	display: block;
 	height: 20px;
-	border-right: 1px solid green;
-	margin: 0px 8px 0px 0px;
+	border-right: 1px solid grey;
+	margin: 5px 8px 0px 8px;
+	padding: 4px 0px 1px 6px;
+	
 	
 	
 }
@@ -200,11 +211,106 @@ footer{
 .content li p{
 	display: block;
 	float: left;
-	width: 152px
+	width: 200px;
+	margin: 7px auto 14px 0px;
 }
 
 
 /*--- EXT NAV */
+
+#rays  { /* with animation properties */
+background: url(../images/rays.png) 0 0 no-repeat;
+background-image: url(../images/rays.png);
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+background-attachment: initial;
+background-position-x: 0px;
+background-position-y: 0px;
+background-origin: initial;
+background-clip: initial;
+background-color: initial;
+position: absolute;
+top: -800px;
+left: -550px;
+width: 1450pt;
+height: 1200pt;
+-webkit-animation-name: spin;
+-webkit-animation-duration: 40000ms;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-moz-animation-name: spin;
+-moz-animation-duration: 40000ms;
+-moz-animation-iteration-count: infinite;
+-moz-animation-timing-function: linear;
+-ms-animation-name: spin;
+-ms-animation-duration: 40000ms;
+-ms-animation-iteration-count: infinite;
+-ms-animation-timing-function: linear;
+-o-transition: rotate(3600deg);
+z-index: -10;
+}
+
+#three .temp{
+	font-size: 116px;
+	   text-shadow: 
+	   			2px 2px #fe4902, 
+                3px 3px #fe4902, 
+                4px 4px #fe4902,
+                5px 5px #fe4902,  
+                6px 6px #fe4902,
+                7px 7px #fe4902;  
+                
+}
+	
+	
+	
+/* Calender ------------- */
+
+
+.calendar ul, .calendar ol {
+		padding:0px;
+		margin: 0px
+}
+	
+
+ol.calendar    {
+
+width:65em;margin:0 auto;display:block; min-height: 200px;
+			}
+li		{list-style:none;}
+p.link		{text-align:center;display: block;}
+h1		{display: block; width: 200px;height:76px;
+			background:url(../images/july.png);text-indent:-9999px; margin: 15px auto; }
+
+/*
+ * Day styles
+ -------------------------*/
+li li		{color:black;width:7em;height:7em;float:left;margin:.2em; padding:.2em;overflow:auto;
+			background: url(../images/day-bg.png) bottom right no-repeat; }
+
+/*
+ * Day content (UL/OL & P)
+ -------------------------*/
+li li p	 {font-size:.7em;display:block;}
+li li ol	 {width:auto;}
+li li ul li,
+li li ol li     {font-size:.7em;display:block;height:auto;width:auto; background: none;
+			margin:0;padding:.2em 0;float:none;}
+
+/*
+ * Holiday class
+ -------------------------*/
+li li.holiday    {  }
+
+/*
+ * Inactive months
+ -------------------------*/
+li#lastmonth li,
+li#nextmonth li    { background: url(../images/day-bg-inactive.png);}
+
+
+
+
 
 
 
