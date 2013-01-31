@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">	
+<!--- this is a testing area --->
+				<script type="text/javascript">
+				(function($){
+				
+				$(window).load(function(){
+						
+						
+						$('#countdown').countdown({
+							timestamp	: {	'days'		: 1,
+											'hours'		: 0,
+											'minutes' 	: 0,
+											'seconds' 	: 10
+											},
+							duration	: 360,
+							
+							soundURL	: 'js/flip.mp3',
+							volume: 25,
+							callback	: function(days, hours, minutes, seconds){
+			
+									var message = "";
+									
+									message += days + " day" + ( days==1 ? '':'s' ) + ", ";
+									message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
+									message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
+									message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
+								
+									$('.callback').html(message);
+								}
+							})
+							
+					})
+				})(jQuery)	
+		</script>
+		<div id="countdown">
+			
+		</div>
+		
+		<div class="callback"></div>
+		
+		
+		<!-- end of testing area ---->
+</div>
+
+
+<script type="text/javascript" src="js/timer.js"></script>		
+</body>
+</html>

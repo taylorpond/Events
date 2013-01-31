@@ -36,7 +36,7 @@
 <link rel="shortcut icon" href="images/mobile/l/apple-touch-icon.png">
 
 <!-- js -->
-<script type="text/javascript" src="js/timer.js"></script>
+
 
 </head>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -45,24 +45,44 @@
 <!--[if IE 8 ]>    <body class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <body class="no-js ie9"> <![endif]-->
 <!--[if (gte IE 10)|!(IE)]><!-->  <!--<![endif]-->
-<body class="blue">
+<body id="main" class="blue">
 	<header>
 		<div class="container">
-			<ul id="menu-bar"  class="col12">
-				<img class="main-logo" width="180" src="images/extravaganza-seoul.png">
-				<li class="current left"><a href="#">AGENDA</a></li>
-				<li class="left"><a href="#">EVENT INFO</a></li>
-				<li class="left"><a href="#">TICKETS</a></li>
-				<li class="right"><a href="#"> TRAVEL INFO</a></li>
-				<li class="right"><a href="#"> PROMOTIONS</a></li>
-			</ul>
+		<div class="top-button-container right">
+			<div class="callback"></div>
+			<h5>left until the event! </h5>
+			<a href="#five" class="buy-now small right">BUY NOW!</a>	
 		</div>
+			<ul id="menu-bar"  class="col12">
+			
+				<a href="#main"><img class="main-logo" width="180" src="images/extravaganza-seoul.png"></a>
+				<li class="current left"><a href="#four">AGENDA</a></li>
+				<li class="left"><a href="#two">EVENT INFO</a></li>
+				<li class="left"><a href="#five">TICKETS</a></li>
+				<li class="right"><a href="#three"> TRAVEL INFO</a></li>
+				<li class="right"><a href="#six"> VIDEO & MEDIA</a></li>
+			</ul>
+			
+		</div>
+		
 	</header>
 	<section id="one">
 		<div class="container">
 			<div class="row">
 				<div class="col12 first" style="text-align:center;">
-					<div class="slides"
+					<div id="slideshow">
+						<div>
+							This is a test.  
+						</div>
+						<div>
+							This is another test.
+						</div>
+						<div>
+							Almost as cool as a Cubicle! 
+						</div>
+						<div>
+							<img src="images/leaf.png">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -112,12 +132,12 @@
 			<div id=rays></div>
 		</div><!-- end block -->
 	</section>
-<!-- SPEAKERS SECTION
+<!-- EVENT INFO SECTION
 
 ================================================================== -->
 	<section id="two">
 		<div class="container">
-			<h2>Speakers</h2>
+			<h2>Event Info</h2>
 			<div class="row">
 				<div class="col3 first ">
 					<h3>This is a description that best describes the section.</h3>
@@ -125,7 +145,7 @@
 				</div>
 				<div class="speakers col8 offset1">
 					<div class="row">
-						<h3>Presenters</h3>
+						<h3>Guest Speakers</h3>
 						<div class="col2 speaker first ">
 							<h4>This is a header</h4>
 							<div class="image-border">
@@ -229,6 +249,19 @@
 				<div class="col3 first ">
 					<h3>This is a description that best describes the section.</h3>
 					<p>Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis. Vivamus mollis est id odio 						lobortis id dapibus ante consectetur.</p>
+					
+					<p>Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus </p>
+					<h4>List of important info</h4>
+					<ul>
+						<li>This is a list item</li>
+						<li>This is a list item</li>
+						<li>This is a list item</li>
+						<li>This is a list item</li>
+						<li>This is a list item</li>
+						<li>This is a list item</li>
+					</ul>
+					
+					
 				</div>
 				<div class="col8 last  ">
 					<h3>Calendar of Events</h3>
@@ -241,7 +274,17 @@
 						</li>
 						<li id="thismonth">
 							<ol>
-								<li>1</li>
+								<li>1
+									<ol>
+										<li>ENROLLMENT</li>
+										<li>LECTURES</li>
+										
+									</ol>	
+									
+									
+								</li>
+								
+								
 								<li>2</li>
 								<li>3</li>
 								<li>4</li>
@@ -285,13 +328,31 @@
 			</div>
 		</div>
 	</section>
-<!-- EVENT INFO SECTION 
+<!-- AGENDA SECTION 
 
 ================================================================== -->
 	<section id="five">
 		<div class="container">
 			<h2>Tickets</h2>
+			<div class="row countdownHolder">
+				
+<!-- this is a testing area 
+=================================================================== -->
+					<div id="countdown"></div>
+				
+			</div>
 			<div class="row">
+				<div class="col6 offset3">
+					<h3>This is a Header</h3>
+					<p>Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis </p>
+					<p>Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis </p>
+				</div>
+			</div>
+			<div class="row">
+			<div class="col4 offset3">
+			<h4>Click here to</h4>
+			<a class="buy-now large ">BUY NOW!</a>	
+			</div>
 			</div>
 		</div>
 	</section>
@@ -300,59 +361,131 @@
 ================================================================== -->
 	<section id="six">
 		<div class="container">
-			<h2>Event Info</h2>
+			<h2>Video and Media</h2>
+			<div class="row">
+			<div class="col6 first">
+				<h3>Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar  </h3>
+				
+			</div>
+			</div>
+			<div class="row">
+			
+				<div class="col3 first">
+					<img src="http://placehold.it/220x100">
+					<h4>Proin ac arcu ut </h4>
+					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
+					
+				</div>
+				<div class="col3 ">
+					<img src="http://placehold.it/220x100">
+					<h4>Proin ac arcu ut </h4>
+					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
+				</div>
+				<div class="col3 ">
+					<img src="http://placehold.it/220x100">
+					<h4>Proin ac arcu ut </h4>
+					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
+				</div>
+				<div class="col3 last">
+					<img src="http://placehold.it/220x100">
+					<h4>Proin ac arcu ut </h4>
+					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
+				</div>
+			
+			</div>	
+			<div class="row">
+			
+				<div class="col3 first">
+					<img src="http://placehold.it/220x100">
+					<h4>Proin ac arcu ut </h4>
+					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
+					
+				</div>
+				<div class="col3 ">
+					<img src="http://placehold.it/220x100">
+					<h4>Proin ac arcu ut </h4>
+					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
+				</div>
+				<div class="col3 ">
+					<img src="http://placehold.it/220x100">
+					<h4>Proin ac arcu ut </h4>
+					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
+				</div>
+				<div class="col3 last">
+					<img src="http://placehold.it/220x100">
+					<h4>Proin ac arcu ut </h4>
+					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
+				</div>
+			
+			</div>	
+
+		
 		</div>
 	</section>
 <!-- Contact
 ================================================== -->
-	<section class="section four">
-		<div class="container">
-			<div class="row">
-			<div class="col4 logo first"><img src="images/leaf.png"><h2 >HERBALIFE</h2></div>
-		</div>
-		<div class="row">
-			<div class="col4 first">
-				<h4>MORE ON THIS SITE</h4>
-				<ul>
-					<li>Cookie & Privacy Policy</li>
-					<li>Feedback</li>
-					<li>Fine Print</li>
-				</ul>	
-			</div>
-			<div class="col4 second">
-				<h4>LET'S KEEP IN TOUCH</h4>	
-			</div>
-			<div class="col4 last">
-				<h4>OTHER HERBALIFE SITES</h4>	
-			</div>
-		</div>
-	</section>
-<!-- footer
-================================================== -->
+	
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col10">
-					<p>Originally compiled by 
-					<a href="mailto:marku@herbalife.com">Mark Uraine</a>, and hosted on Github at 
-					<a href="https://github.com/Herbalifedev/hrbl-dsx-framework" target="_blank">https://github.com/Herbalifedev/hrbl-dsx-framework</a><br />
-					Continuing contributions by 
-					<a href="mailto:andresp@herbalife.com">Andres Podesta</a>, 
-					<a href="mailto:carlosmen.consultant@herbalife.com">Carlos Mendez</a>, 
-					<a href="mailto:christopherc@herbalife.com">Chris Clarke</a>, 
-					<a href="mailto:kennethd@herbalife.com">Kenneth Davila</a>, &amp; 
-					<a href="mailto:marku@herbalife.com">Mark Uraine</a></p>
+				<div class="col4 logo first"><img src="images/leaf.png"><h2 >HERBALIFE</h2></div>
+			</div>
+			<div class="row">
+				<div class="col4 first">
+					<h4>MORE ON THIS SITE</h4>
+					<ul>
+						<li>Cookie & Privacy Policy</li>
+						<li>Feedback</li>
+						<li>Fine Print</li>
+					</ul>	
+				</div>	
+				<div class="col4 second">
+					<h4>LET'S KEEP IN TOUCH</h4>	
 				</div>
-				<div class="col2" style="text-align:right;">
-					<a href="#"><i class="icon-chevron-up icon-white"></i> Back to top</a>
+				<div class="col4 last">
+					<h4>OTHER HERBALIFE SITES</h4>	
+					<ul>
+						<li>Extravaganza World Map</li>
+						<li>North America Events</li>
+						<li>Herbalife.com</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+<!-- footer
+================================================== -->
+
+
 <!-- JS
 ================================================== -->
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<!----- Slideshow
+
+=================================================================== -->
+<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  5000);
+			
+		});
+	</script>
+	
+	
+<script type="text/javascript" src="js/timer.js"></script>
 <script src="js/pngFixer.js"></script>
 <script src="js/scrollbar.min.js"></script>
 <script src="js/buttons.js"></script>
@@ -410,5 +543,63 @@ $(this).toggleClass("active");
         });
     });
 </script>
+<!-- Ticker Script -->
+<script type="text/javascript">
+				(function($){
+				
+				$(window).load(function(){
+						
+						
+						$('#countdown').countdown({
+							timestamp	: {	'days'		: 1,
+											'hours'		: 0,
+											'minutes' 	: 0,
+											'seconds' 	: 10
+											},
+							duration	: 360,
+							
+							soundURL	: 'js/flip.mp3',
+							volume: 25,
+							callback	: function(days, hours, minutes, seconds){
+			
+									var message = "";
+									
+									message += days + " day" + ( days==1 ? '':'s' ) + ", ";
+									message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
+									message += minutes + " min" + ( minutes==1 ? '':'s' ) + " and ";
+									message += seconds + " s  <br />";
+								
+									$('.callback').html(message);
+								}
+							})
+							
+					})
+				})(jQuery)	
+		</script>
+<!----- Scroll to function 
+
+=================================================================== -->
+<script type="text/javascript">
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 350);
+            return false;
+        }
+    }
+});
+</script>
+
+
+
+
+
+
 </body>
 </html>

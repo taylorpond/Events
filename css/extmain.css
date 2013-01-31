@@ -34,8 +34,13 @@ section{
 	
 }
 
-section#one { background:none;
-
+section#one { 
+	background:none;
+	padding: 80px 0px 90px 0px;
+	
+	
+	
+	
 	}
 	
 	
@@ -45,23 +50,47 @@ section#two {
 	border-top: 1px solid #3382D1;
 	background: #00417C;
 	color: #fff;
+	padding: 200px 0px 250px 0px;
 	}
 	
 	
 section#three {
-	background: #002047;
+	
 	color: #fff;
+	padding: 200px 0px 200px 0px;
 	/*use bkg linear background*/
 	/*box-shadow: inset 0 150px 250px rgba(0,0,0,.5);*/
 	
 	}
 	
 section#four {
-	background: #001027;
+	box-shadow: inset 0 30px 70px rgba(0,0,0,.2);
+	border-bottom: 1px solid darkgray;
+	border-top: 1px solid #3382D1;
+	background: #00417C;
 	color: #fff;
+
+	padding: 200px 0px 200px 0px;
+	
+	
+	}
+	
+section#five {
+	color: black;
 	/*use bkg linear background*/
 	/*box-shadow: inset 0 150px 250px rgba(0,0,0,.5);*/
-	padding-bottom: 40px
+	padding: 200px 0px 200px 0px;
+	
+	
+	}
+	
+section#six{
+	box-shadow: inset 0 30px 70px rgba(0,0,0,.2);
+	border-bottom: 1px solid darkgray;
+	border-top: 1px solid #3382D1;
+	background: #00417C;
+	color: #fff;
+	padding: 200px 0px 200px 0px;
 	
 	
 	}
@@ -80,17 +109,28 @@ body,td,th: {color: #FFF;
 .main-logo{
 
 	position: fixed;
-	margin: 0px 0px 0px 375px;
+	margin: 0px 0px 0px 377px;
 	top: 5px;
 	}
 
-.slides{
+#slideshow{
 
-	height:300px;
+	height:350px;
 	background-color: white;
 	box-shadow: #414769 0px 0px 5px;
-	margin: 125px 0px 20px 0px;
+	margin: 100px 0px 20px 0px;
 	}
+
+#slideshow > div { 
+	font-size: 60px;
+	line-height: 60px;
+    position: absolute; 
+    top: 180px; 
+    left: 90px; 
+    right: 100px; 
+    bottom: 100px; 
+}
+
 
 .line-two{
 	font-size: 10px;
@@ -101,9 +141,7 @@ img.countdown{
 	margin: 1px 10px 0px 0px; 
 	}
 
-.btn.buynow{
-top: 1px
-}
+
 
 
 
@@ -176,7 +214,9 @@ top: 1px
 
 
 footer{
-	background-image:url(../images/bg-footer.jpg);
+	background-image:url('../images/bg-footer.jpg');
+	padding: 30px 0px 60px 0px;
+	
 	
 	
 }
@@ -219,7 +259,10 @@ footer{
 /*--- EXT NAV */
 
 #rays  { /* with animation properties */
-background: url(../images/rays.png) 0 0 no-repeat;
+background: url('../images/rays.png') 0 0 no-repeat;
+background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
 background-image: url(../images/rays.png);
 background-repeat-x: no-repeat;
 background-repeat-y: no-repeat;
@@ -230,9 +273,9 @@ background-origin: initial;
 background-clip: initial;
 background-color: initial;
 position: absolute;
-top: -800px;
-left: -550px;
-width: 1450pt;
+top: -510px;
+left: -320px;
+width: 1000pt;
 height: 1200pt;
 -webkit-animation-name: spin;
 -webkit-animation-duration: 40000ms;
@@ -280,13 +323,13 @@ width:65em;margin:0 auto;display:block; min-height: 200px;
 li		{list-style:none;}
 p.link		{text-align:center;display: block;}
 h1		{display: block; width: 200px;height:76px;
-			background:url(../images/july.png);text-indent:-9999px; margin: 15px auto; }
+			background:url('../images/july.png');text-indent:-9999px; margin: 15px auto; }
 
 /*
  * Day styles
  -------------------------*/
-li li		{color:black;width:7em;height:7em;float:left;margin:.2em; padding:.2em;overflow:auto;
-			background: url(../images/day-bg.png) bottom right no-repeat; }
+li li		{color:black;width:7em;height:7em;float:left;margin:.2em; padding:1em;overflow:auto;
+			background: url('../images/day-bg.png') bottom right no-repeat; }
 
 /*
  * Day content (UL/OL & P)
@@ -294,8 +337,8 @@ li li		{color:black;width:7em;height:7em;float:left;margin:.2em; padding:.2em;ov
 li li p	 {font-size:.7em;display:block;}
 li li ol	 {width:auto;}
 li li ul li,
-li li ol li     {font-size:.7em;display:block;height:auto;width:auto; background: none;
-			margin:0;padding:.2em 0;float:none;}
+li li ol li     {font-size:.8em;display:block;height:auto;width:auto; background: none;
+			margin:0;padding:0;float:none; font-weight: bold;}
 
 /*
  * Holiday class
@@ -306,13 +349,147 @@ li li.holiday    {  }
  * Inactive months
  -------------------------*/
 li#lastmonth li,
-li#nextmonth li    { background: url(../images/day-bg-inactive.png);}
+li#nextmonth li    { background: url('../images/day-bg-inactive.png');}
 
 
 
+/* Countdown -------------------------*/
 
+.countdownWrap{
+	background: rgba(0, 0, 0, .25);
+border-radius: 5px;
+padding: 0px 0px 0px 0px;
+box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
+height: 146px;
+border-bottom: 1px solid white;
+	
+	
+	
+}
 
+.countdownHolder{
+	width: 593px;
+	height: 150px;
+	position: relative;
+	margin: 0px auto 35px auto;
+	color: white;
+	padding: 5px 0px 0px 0px;
+}
 
+.countdownHolder .position{
+	display: block;
+	float: left;
+	width: 74px;
+	height: 136px;
+	overflow: hidden;
+	position: relative;
+	
+	
+}
+
+.countdownHolder .digit{
+	position:absolute;
+	display:block;
+	width: 223px;
+	height: 8976px;
+	background: url('../images/frame.png') no-repeat 0 0;
+	z-index: 1;
+}
+.countdownHolder>span{
+	width: 148px;
+	height: 136px;
+	float: left;
+}
+.countdownHolder .position .countWord{
+	width:592px;
+	height: 544px;
+	background: url('../images/words.png') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+/* Buynow button ------------------------------------*/
+
+a.buy-now.large {
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    text-shadow: -1px -2px rgba(0, 0, 0, 0.2);
+    background-color: rgba(219,87,5,1);
+    font-weight: 700;
+    font-size: 5em;
+    display: block;
+    padding: 30px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 35px auto;
+	width: 325px;
+	height: 24px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+a.buy-now.large:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+
+a.buy-now.small {
+	float: right;
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    text-shadow: -1px -2px rgba(0, 0, 0, 0.2);
+    background-color: rgba(219,87,5,1);
+    font-weight: 700;
+    font-size: 1.3em;
+    display: block;
+    padding: 6px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 6px 0px rgba(219,31,5,1), 0px 6px 10px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 6px 0px rgba(219,31,5,1), 0px 6px 10px rgba(0,0,0,.7);
+    box-shadow: 0px 6px 0px rgba(219,31,5,1), 0px 6px 10px rgba(0,0,0,.7);
+	width: 90px;
+	height: 18px;
+	text-align: center;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+a.buy-now.small:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+
+.top-button-container{
+	float: right;
+	text-align: right;
+	margin: 3px 20px 0px 0px;
+	
+	
+}
 
 
 

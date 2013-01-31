@@ -27,7 +27,7 @@ header{
 	
 	}
 #menu-bar li {
-  margin: 70px 5px 0px 5px;
+  margin: 08px 5px 0px 5px;
   padding: 0px 0px 0px 0px;
 
   position: relative;
@@ -151,3 +151,9 @@ header{
 * html #menu-bar {
   height: 1%;
 }
+
+
+/*--- Counter ----*/
+
+
+
