@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="css/hrbl.master.css">
 <link rel="stylesheet" href="css/extnavigation.css">
 <link rel="stylesheet" href="css/extmain.css">
+
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 <link href="css/scrollbar.css" rel="stylesheet" type="text/css" />
 <!-- Favicons
@@ -48,10 +49,30 @@
 <body id="main" class="blue">
 	<header>
 		<div class="container">
-		<div class="top-button-container right">
-			<div class="callback"></div>
-			<h5>left until the event! </h5>
-			<a href="#five" class="buy-now small right">BUY NOW!</a>	
+        	
+            
+                <div id="dropdown" class="ddmenu right">
+                 Language 
+                	<ul> 
+                		<li><a href="#">Spanish</a></li> 
+                    	<li><a href="#">English</a></li> 
+                    	<li><a href="#">Korean</a></li> 
+                    	<li><a href="#">French</a></li> 
+                	</ul>
+				</div> 
+			
+
+
+		<div class="top-button-container">
+			<div class="left">
+			<a href="#five" class="buy-now small left">BUY NOW!</a>
+            </div>	
+            <div class=" right">
+            <div class="callback "></div>
+			
+            <h5>left until the event! </h5>
+            </div>
+            
 		</div>
 			<ul id="menu-bar"  class="col12">
 			
@@ -368,26 +389,29 @@
 				
 			</div>
 			</div>
+            
+            
 			<div class="row">
+            
 			
 				<div class="col3 first">
-					<img src="http://placehold.it/220x100">
+					<a href="#" data-reveal-id="modal-one"><img src="http://placehold.it/220x100"></a>
 					<h4>Proin ac arcu ut </h4>
 					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
 					
 				</div>
 				<div class="col3 ">
-					<img src="http://placehold.it/220x100">
+					<a href="#" data-reveal-id="modal-two"><img src="http://placehold.it/220x100"></a>
 					<h4>Proin ac arcu ut </h4>
 					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
 				</div>
 				<div class="col3 ">
-					<img src="http://placehold.it/220x100">
+					<a href="#" data-reveal-id="modal-three"><img src="http://placehold.it/220x100"></a>
 					<h4>Proin ac arcu ut </h4>
 					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
 				</div>
 				<div class="col3 last">
-					<img src="http://placehold.it/220x100">
+					<a href="#" data-reveal-id="modal-four"><img src="http://placehold.it/220x100"></a>
 					<h4>Proin ac arcu ut </h4>
 					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
 				</div>
@@ -396,23 +420,23 @@
 			<div class="row">
 			
 				<div class="col3 first">
-					<img src="http://placehold.it/220x100">
+					<a href="#" data-reveal-id="modal-five"><img src="http://placehold.it/220x100"></a>
 					<h4>Proin ac arcu ut </h4>
 					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
 					
 				</div>
 				<div class="col3 ">
-					<img src="http://placehold.it/220x100">
+					<a href="#" data-reveal-id="modal-six"><img src="http://placehold.it/220x100"></a>
 					<h4>Proin ac arcu ut </h4>
 					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
 				</div>
 				<div class="col3 ">
-					<img src="http://placehold.it/220x100">
+					<a href="#" data-reveal-id="modal-seven"><img src="http://placehold.it/220x100"></a>
 					<h4>Proin ac arcu ut </h4>
 					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
 				</div>
 				<div class="col3 last">
-					<img src="http://placehold.it/220x100">
+					<a href="#" data-reveal-id="modal-eight"><img src="http://placehold.it/220x100"></a>
 					<h4>Proin ac arcu ut </h4>
 					<p>	Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis Proin ac arcu ut quam dictum auctor</p>
 				</div>
@@ -462,11 +486,75 @@
 ================================================== -->
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 
 <!----- Slideshow
 
 =================================================================== -->
+<script src="js/jquery.reveal.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('#myButton').click(function(e) {
+        e.preventDefault();
+        $('#myModal').reveal();
+      });
+    });
+  </script>
+
+
+
+
+<script type="text/javascript">
+
+	
+		// When the document is loaded...
+	    $(document).ready(function()
+		{	
+
+			// Hide the toTop button when the page loads.
+			$("#toTop").css("display", "none");
+			
+			// This function runs every time the user scrolls the page.
+			$(window).scroll(function(){
+
+				// Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
+				if($(window).scrollTop() > 0){
+
+					// If it's more than or equal to 0, show the toTop button.
+					console.log("is more");
+					$("#toTop").fadeIn("slow");
+				}
+				else {
+					// If it's less than 0 (at the top), hide the toTop button.
+					console.log("is less");
+					$("#toTop").fadeOut("slow");
+
+				}
+			});
+
+			// When the user clicks the toTop button, we want the page to scroll to the top.
+			$("#toTop").click(function(){
+
+				// Disable the default behaviour when a user clicks an empty anchor link.
+				// (The page jumps to the top instead of // animating)
+				event.preventDefault();
+
+				// Animate the scrolling motion.
+				$("html, body").animate({
+					scrollTop:0
+				},"slow");
+
+			});
+			
+		});
+    
+ </script>
+
+
+
+
+
+
 <script>
 		$(function() {
 		
@@ -580,6 +668,13 @@ $(this).toggleClass("active");
 
 =================================================================== -->
 <script type="text/javascript">
+$("#dropdown").on("click", function(e){ e.preventDefault(); if($(this).hasClass("open")) { $(this).removeClass("open"); $(this).children("ul").slideUp("fast"); } else { $(this).addClass("open"); $(this).children("ul").slideDown("fast"); } });
+
+</script>
+
+
+
+<script type="text/javascript">
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
@@ -596,10 +691,72 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 </script>
 
+<!-- modal -->
 
 
 
+<div id="toTop">
+<a class="buy-now small" href="#">Go to Top ↑</a>
+</div>
+  
 
+<div id="modal-one" class="reveal-modal modal">
+		<h2>This is a Video</h2>
+        <img src="http://placehold.it/510x300">
+		<p class="lead">A quote about the video you're looking at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+<div id="modal-two" class="reveal-modal modal">
+		<h2>This is a group of photos</h2>
+        <img src="http://placehold.it/510x300">
+		<p class="lead">A quote about the video you're looking at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    
+<div id="modal-three" class="reveal-modal modal">
+		<h2>This is a group of photos</h2>
+        <img src="http://placehold.it/510x300">
+		<p class="lead">A quote about the video you're looking at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    <div id="modal-four" class="reveal-modal modal">
+		<h2>This is a Video</h2>
+        <img src="http://placehold.it/510x300">
+		<p class="lead">A quote about the video you're looking at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    <div id="modal-five" class="reveal-modal modal">
+		<h2>This is a Video</h2>
+        <img src="http://placehold.it/510x300">
+		<p class="lead">A quote about the video you're looking at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    <div id="modal-six" class="reveal-modal modal">
+		<h2>This is a Video</h2>
+        <img src="http://placehold.it/510x300">
+		<p class="lead">A quote about the video you're looking at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    <div id="modal-seven" class="reveal-modal modal">
+		<h2>This is a Video</h2>
+        <img src="http://placehold.it/510x300">
+		<p class="lead">A quote about the video you're looking at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    <div id="modal-eight" class="reveal-modal modal">
+		<h2>This is a Video</h2>
+        <img src="http://placehold.it/510x300">
+		<p class="lead">A quote about the video you're looking at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
 
 </body>
 </html>

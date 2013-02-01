@@ -16,7 +16,7 @@ header{
 }
 
 #menu-bar {
-	margin: 0px 0px 0px 0px;
+	margin: 20px 0px 0px 0px;
 	padding: 9px 0px 6px 0px;
 	z-index: 10;
 	line-height: 100%;
@@ -58,7 +58,8 @@ header{
 	
 }
 
-#menu-bar .current a, #menu-bar li:hover > a {
+/* #menu-bar .current a,*/
+ #menu-bar li:hover > a {
 
 
 	color: white;
