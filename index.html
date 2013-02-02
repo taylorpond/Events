@@ -65,26 +65,26 @@
 
 		<div class="top-button-container">
 			<div class="left">
-			<a href="#five" class="buy-now small left">BUY NOW!</a>
+				<a href="#five" class="buy-now small left">BUY NOW!</a>
             </div>	
             <div class=" right">
-            <div class="callback "></div>
+            	<div class="callback "></div>
 			
-            <h5>left until the event! </h5>
+            	<h5>left until the event! </h5>
             </div>
             
 		</div>
-			<ul id="menu-bar"  class="col12">
-			
+		<nav class="col12 first">
+			<ul class="nav">
 				<a href="#main"><img class="main-logo" width="180" src="images/extravaganza-seoul.png"></a>
-				<li class="current left"><a href="#four">AGENDA</a></li>
+				<li class="left"><a href="#four">AGENDA</a></li>
 				<li class="left"><a href="#two">EVENT INFO</a></li>
 				<li class="left"><a href="#five">TICKETS</a></li>
 				<li class="right"><a href="#three"> TRAVEL INFO</a></li>
 				<li class="right"><a href="#six"> VIDEO & MEDIA</a></li>
 			</ul>
-			
-		</div>
+		</nav>
+	</div>
 		
 	</header>
 	<section id="one">
@@ -92,18 +92,37 @@
 			<div class="row">
 				<div class="col12 first" style="text-align:center;">
 					<div id="slideshow">
-						<div>
-							This is a test.  
-						</div>
-						<div>
-							This is another test.
-						</div>
-						<div>
-							Almost as cool as a Cubicle! 
-						</div>
-						<div>
-							<img src="images/leaf.png">
-						</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					</div>
 				</div>
 			</div>
@@ -204,6 +223,7 @@
 							<p>Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis</p>	
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div><!-- container -->
@@ -487,26 +507,41 @@
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-<!----- Slideshow
+<script type="text/javascript" src="js/timer.js"></script>
+<script src="js/pngFixer.js"></script>
+<script src="js/scrollbar.min.js"></script>
+<script src="js/buttons.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script> 
+<script type="text/javascript" src="js/jquery.ba-resize.min.js"></script> 
+<script src="js/tabs.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/jquery.reveal.js"></script>
+<script src="js/scrollspy.js"></script>
+<script src="js/slides.jquery.js"></script>
+<!----- Modal
 
 =================================================================== -->
-<script src="js/jquery.reveal.js"></script>
+
+
+
 <script type="text/javascript">
+   
+// Scrollspy
+	$(function(){
+		$('.nav').scrollspy()
+	});   
+	
+   
+// Modal
     $(document).ready(function() {
       $('#myButton').click(function(e) {
         e.preventDefault();
         $('#myModal').reveal();
       });
     });
-  </script>
 
+// To top
 
-
-
-<script type="text/javascript">
-
-	
 		// When the document is loaded...
 	    $(document).ready(function()
 		{	
@@ -548,38 +583,14 @@
 			
 		});
     
- </script>
+// Slideshow
 
 
 
 
+// Scrollbar
 
 
-<script>
-		$(function() {
-		
-			$("#slideshow > div:gt(0)").hide();
-	
-			setInterval(function() { 
-			  $('#slideshow > div:first')
-			    .fadeOut(1000)
-			    .next()
-			    .fadeIn(1000)
-			    .end()
-			    .appendTo('#slideshow');
-			},  5000);
-			
-		});
-	</script>
-	
-	
-<script type="text/javascript" src="js/timer.js"></script>
-<script src="js/pngFixer.js"></script>
-<script src="js/scrollbar.min.js"></script>
-<script src="js/buttons.js"></script>
-<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script> 
-<script type="text/javascript" src="js/jquery.ba-resize.min.js"></script> 
-<script type="text/javascript">
 jQuery(document).ready(function($) {
 buttonsClass("div.social_button");
 buttonsClass("div.scroll_button");
@@ -605,34 +616,9 @@ barColor: "#E6E6E6",		// Back bar color
 barOverColor: "#CCCCCC"		// Back bar color on over
 });
 });
-</script>
-<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
-<script src="js/tabs.js"></script>
-<script src="js/tooltip.js"></script>
-<script type="text/javascript">
-$(function(){
-$('[rel=tooltip]').tooltip();
-});
-jQuery(document).ready(function($){
-/* prepend menu icon */
-$('#nav-wrap').prepend('<div id="menu-icon">Menu</div>');
-/* toggle nav */
-$("#menu-icon").on("click", function(){
-$("#nav").slideToggle();
-$(this).toggleClass("active");
-});
-});
-</script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        // Scroll the whole document
-        $('#navigation').localScroll({
-           target:'body'
-        });
-    });
-</script>
-<!-- Ticker Script -->
-<script type="text/javascript">
+
+// ticker script
+
 				(function($){
 				
 				$(window).load(function(){
@@ -646,16 +632,14 @@ $(this).toggleClass("active");
 											},
 							duration	: 360,
 							
-							soundURL	: 'js/flip.mp3',
-							volume: 25,
-							callback	: function(days, hours, minutes, seconds){
+							callback	: function(days, hours/*, minutes, seconds*/){
 			
 									var message = "";
 									
 									message += days + " day" + ( days==1 ? '':'s' ) + ", ";
 									message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
-									message += minutes + " min" + ( minutes==1 ? '':'s' ) + " and ";
-									message += seconds + " s  <br />";
+									/* message += minutes + " min" + ( minutes==1 ? '':'s' ) + " and ";
+									message += seconds + " s  <br />";*/
 								
 									$('.callback').html(message);
 								}
@@ -663,18 +647,17 @@ $(this).toggleClass("active");
 							
 					})
 				})(jQuery)	
-		</script>
-<!----- Scroll to function 
 
-=================================================================== -->
-<script type="text/javascript">
+
+// dropdown language
+
 $("#dropdown").on("click", function(e){ e.preventDefault(); if($(this).hasClass("open")) { $(this).removeClass("open"); $(this).children("ul").slideUp("fast"); } else { $(this).addClass("open"); $(this).children("ul").slideDown("fast"); } });
 
-</script>
 
 
+// Scroll to function 
 
-<script type="text/javascript">
+
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
@@ -689,9 +672,23 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+
+// Slides
+
+$(function(){
+			$('#slides').slides({
+				preload: true,
+				generateNextPrev: true
+			});
+		});
+
+
+
+
 </script>
 
-<!-- modal -->
+<!-- modal content
+==================================================================== -->
 
 
 

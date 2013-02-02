@@ -45,33 +45,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
 		 }
 
- 	#navigation { list-style:none; width:auto; margin:0 0 0 20px; padding:0; }
- 	#navigation { *zoom: 1; *zoom: 1; }
- 	#navigation:before,
-	#navigation:after { display:table; content: ""; }
- 	#navigation:after { clear:both; }
- 	#navigation li { display:table-cell; vertical-align:middle; width:120px; height:50px; text-align:center; border-right:1px solid #ccc; border-left:1px solid #FFF;  
- 		-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
- 		-webkit-transition: background .2s linear, color .2s linear;
-		-moz-transition: background .2s linear, color .2s linear;
-        -ms-transition: background .2s linear, color .2s linear;
-        -o-transition: background .2s linear, color .2s linear;
-		transition: background .2s linear, color .2s linear; }
- 	#navigation li:hover { background:#f9f9f9; }
- 	#navigation li a { display:table-cell; vertical-align:middle; width:120px; height:50px; text-transform:uppercase; white-space:nowrap; color:#515151; }
- 	#navigation li a:hover { color:#7AC143; position:relative; top:1px; text-shadow:0 1px 0 #FFF; }
- 	#navigation li:first-child { border-left:none; text-align:left; width:auto; padding-right:20px; text-transform:inherit; }
- 	#navigation li:first-child:hover { background:transparent; }
- 	#navigation li:first-child:active { background:transparent; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
- 	#navigation li a h4 { color:#333; text-shadow:0 1px 0 rgba(255,255,255,.8); margin:0; text-transform:none; }
- 	#navigation li a:hover h4 { color:#000; text-shadow:0 1px 0 rgba(255,255,255,.8); }
- 	#navigation li:last-child { border-right:none; width:auto; }
- 	#navigation li:active { color:#555; background:#f4f4f4; -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,.5); -moz-box-shadow:inset 0 0 5px rgba(0,0,0,.5); box-shadow:inset 0 0 5px rgba(0,0,0,.5);
- 		-webkit-transition:none;
-		-moz-transition:none;
-        -ms-transition:none;
-        -o-transition:none;
-		transition:none; }
+
 
  	section { padding-top:1px; padding-bottom:20px; width:100%; position:relative; }
 

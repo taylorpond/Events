@@ -121,15 +121,7 @@ body,td,th: {color: #FFF;
 	margin: 90px 0px 20px 0px;
 	}
 
-#slideshow > div { 
-	font-size: 60px;
-	line-height: 60px;
-    position: absolute; 
-    top: 180px; 
-    left: 90px; 
-    right: 100px; 
-    bottom: 100px; 
-}
+
 
 
 .line-two{
@@ -216,6 +208,15 @@ img.countdown{
 footer{
 	background-image:url('../images/bg-footer.jpg');
 	padding: 30px 0px 60px 0px;
+
+	
+	
+	
+}
+
+footer h4, footer li{
+	color: #666;
+	text-shadow: black 1px;
 	
 	
 	
@@ -229,7 +230,7 @@ footer{
 	display: inline-block;
 	float: left;
 	padding: 0px;
-	width: 280px;
+	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	
 		
@@ -496,17 +497,17 @@ a.buy-now.small:active {
 	position: fixed;
 	top: 75%;
 	right: 0;
-	background: rgba(0, 0, 0, .25);
-	border-left-radius: 5px;
-	-moz-border-radius-bottomleft: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-	border-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-    -webkit-border-top-left-radius: 5px;
-	padding: 10px 10px 6px 4px;
-	box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
-	height: 38px;
-	border-bottom: 1px solid white;
+
+	
+	
+
+	
+	
+   
+	
+	
+	
+	
 }
 
 /* user menu settings */ 
@@ -567,5 +568,57 @@ a.buy-now.small:active {
 	 background: #e7f0f7; 
 }
 
+
+
+/*slides 
+
+*/
+
+
+	/*
+			Load CSS before JavaScript
+		*/
+		
+		/*
+			Slides container
+			Important:
+			Set the width of your slides container
+			Set to display none, prevents content flash
+		*/
+		.slides-container {
+			width:470px;
+			display:none;
+		}
+
+		/*
+			Each slide
+			Important:
+			Set the width of your slides
+			If height not specified height will be set by the slide content
+			Set to display block
+		*/
+		.slides-container div {
+			width:470px;
+			height:170px;
+			display:block;
+		}
+		
+		/*
+			Optional:
+			Reset list default style
+		*/
+		.pagination {
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+
+		/*
+			Optional:
+			Show the current slide in the pagination
+		*/
+		.pagination .current a {
+			color:red;
+		}
 
 
