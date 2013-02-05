@@ -142,13 +142,6 @@ body,td,th: {color: #FFF;
 	top: 5px;
 	}
 
-#slideshow{
-
-	height:350px;
-	background-color: #fff;
-	box-shadow: #414769 0px 0px 5px;
-	margin: 85px 0px 20px 0px;
-	}
 
 
 
@@ -386,7 +379,7 @@ border-radius: 5px;
 padding: 0px 0px 0px 0px;
 box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
 height: 146px;
-border-bottom: 1px solid #fff;
+border-bottom: 1px solid #999;
 	
 	
 	
@@ -453,11 +446,10 @@ a.buy-now.large {
     -webkit-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
     -moz-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
     box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
-    margin: 35px auto;
+    margin: 15px 0px 0px 0px;
 	width: 325px;
 	height: 24px;
 	text-align: center;
-	
 	-webkit-transition: all .1s ease;
 	-moz-transition: all .1s ease;
 	-ms-transition: all .1s ease;
@@ -481,9 +473,9 @@ a.buy-now.small {
     text-shadow: -1px -2px rgba(0, 0, 0, 0.2);
     background-color: rgba(219,87,5,1);
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.0em;
     display: block;
-    padding: 4px 5px 4px 6px;
+    padding: 2px 5px 1px 6px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -510,8 +502,17 @@ a.buy-now.small:active {
 .top-button-container{
 	float: left;
 	text-align: left;
-	margin: 10px 10px 0px 0px;
+	margin: 3px 10px 0px 0px;
 	
+	
+}
+
+.top-button-container h4{
+	padding: 0px 0px 5px 0px;
+	text-shadow:0px 1px 3px rgba(0,0,0,.3);
+	margin: 0px;
+	font-weight: 100;
+	font-size: 16px;
 	
 }
 
@@ -521,17 +522,6 @@ a.buy-now.small:active {
 	position: fixed;
 	top: 75%;
 	right: 0;
-
-	
-	
-
-	
-	
-   
-	
-	
-	
-	
 }
 
 /* user menu settings */ 
@@ -541,13 +531,13 @@ a.buy-now.small:active {
 	display: block; 
 	text-align:right;
 	padding: 3px 5px 4px 10px; 
-	 
-	margin: 10px 0px 0px 0px; 
+	text-shadow:0px 1px 1px rgba(0,0,0,.3);
+	margin: 5px 0px 0px 0px; 
 	position: relative; 
 	cursor: pointer; 
 	border-right: 4px solid #fff;
 	 
-	font-size: 1.2em; 
+	font-size: 16px; 
 	color: #fff; 
 	font-weight: normal; 
 	
@@ -559,6 +549,7 @@ a.buy-now.small:active {
 } 
 #dropdown:hover { 
 	color: #898989; 
+	text-shadow:none;
 } 
 #dropdown.open { 
 	background: #5a90e0; 
@@ -617,6 +608,11 @@ a.buy-now.small:active {
 			text-align: left;
 			box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
 			border: 5px #fff solid;
+			height:350px;
+			background-color: #fff;
+			box-shadow: #414769 0px 0px 5px;
+			margin: 71px 0px 10px 0px;
+	
 			
 		}
 		
@@ -684,4 +680,8 @@ a.buy-now.small:active {
 			color:red;
 		}
 
+.social li{
+	float: left;
+	margin: 0px 15px 0px 0px;
+}
 

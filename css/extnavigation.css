@@ -77,10 +77,8 @@ nav a {
 
 
 
-nav .active a,
-nav li:hover > a {
-
-
+.nav li.active  a,
+.nav li:hover > a {
 	color: white;
 	text-shadow: 0px 1px 1px grey;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

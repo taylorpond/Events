@@ -46,7 +46,7 @@
 <!--[if IE 8 ]>    <body class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <body class="no-js ie9"> <![endif]-->
 <!--[if (gte IE 10)|!(IE)]><!-->  <!--<![endif]-->
-<body id="main" class="blue">
+<body id="main" class="blue" data-spy="scroll" data-target="#navbar">
 	<header>
 		<div class="container">  
 		<div class="row">  
@@ -61,6 +61,16 @@
 		</div> 
 		<div class="top-button-container">
 			<div class="left">
+			<h4>FEB 12th 2013</h4>
+				<a href="#five" class="buy-now small left">BUY TICKETS HERE !</a>
+            </div>	
+           
+            
+		</div>
+		
+		<!--
+		<div class="top-button-container">
+			<div class="left">
 				<a href="#five" class="buy-now small left">BUY NOW!</a>
             </div>	
             <div class=" right">
@@ -69,15 +79,21 @@
             </div>
             
 		</div>
+		-->
+
+		
+		
+		
+		
 		</div>
 		<div class="row">
 		<a href="#main"><img class="main-logo" width="180" src="images/extravaganza-seoul.png"></a>
 		
-		<nav>
+		<nav id="navbar">
 		<div class="col6">
 			<ul class="nav one ">
 				
-				<li class="last" ><a href="#five">TICKETS</a></li>
+				<li class="last"><a href="#five">TICKETS</a></li>
 				<li ><a href="#four">AGENDA</a></li>
 				<li ><a href="#two">EVENT INFO</a></li>
 			</ul>
@@ -528,8 +544,16 @@
 						<li><a href="#"><Fine Print</a></li>
 					</ul>	
 				</div>	
-				<div class="col4 second">
+				<div class="col4 second social">
 					<h4>LET'S KEEP IN TOUCH</h4>	
+					<ul>
+						<li><img src="images/social-facebook.png"></li>
+						<li><img src="images/social-twitter.png"></li>
+						<li><img src="images/social-youtube.png"></li>
+						<li><img src="images/social-email.png"></li>
+						
+					</ul>
+					
 				</div>
 				<div class="col4 last">
 					<h4>OTHER HERBALIFE SITES</h4>	
@@ -551,7 +575,8 @@
 ================================================== -->
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 <script type="text/javascript" src="js/timer.js"></script>
 <script src="js/pngFixer.js"></script>
 <script src="js/scrollbar.min.js"></script>
@@ -560,8 +585,9 @@
 <script type="text/javascript" src="js/jquery.ba-resize.min.js"></script> 
 <script src="js/tabs.js"></script>
 <script src="js/tooltip.js"></script>
-<script src="js/jquery.reveal.js"></script>
 <script src="js/scrollspy.js"></script>
+<script src="js/jquery.reveal.js"></script>
+
 <script src="js/slides.jquery.js"></script>
 <!----- Modal
 
@@ -570,11 +596,12 @@
 
 
 <script type="text/javascript">
-   
+
 // Scrollspy
 	$(function(){
 		$('.nav').scrollspy()
-	});   
+	});
+	
 	
    
 // Modal
@@ -692,6 +719,8 @@ barOverColor: "#CCCCCC"		// Back bar color on over
 							
 					})
 				})(jQuery)	
+				
+				
 
 
 // dropdown language
