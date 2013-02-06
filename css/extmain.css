@@ -490,7 +490,22 @@ a.buy-now.small:active {
 	position: fixed;
 	top: 75%;
 	right: 0;
+	width:100px;
 }
+
+#toTop ul{
+	float: right;
+	margin:	15px 10px 0px 0px;
+	background: black;
+	padding: 10px;
+	background: rgba(0, 0, 0, .10);
+	border-radius: 5px;
+	box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
+	border-bottom: 1px solid #999;
+	
+	
+}
+
 
 /* user menu settings */ 
 #dropdown { 
@@ -652,10 +667,16 @@ a.buy-now.small:active {
 
 /*  getintouch form */
 
+.subscribe{
+	padding: 0px 0px 70px 0px;
+	border-bottom: 1px dashed #ccc;
+	
+	
+	
+}
 
 
-
-.getintouch form input{
+.getintouch form input {
 	height: 50px;
 	padding: 0px 15px 0px 20px;
 	width: 100%;
@@ -677,7 +698,7 @@ a.buy-now.small:active {
 
 footer .second.social li{
 	float: left;
-	margin: 0px 5px 0px 0px;
+	margin: 0px 10px 0px 0px;
 	
 	
 	
@@ -687,8 +708,8 @@ footer .second.social li{
 	width: 100%;
 	min-height: 150px;
 	padding: 10px 15px 0px 20px;
-	font-weight: lighter;
 	font-size: 1.5em;
+	font-weight: inherit;
 
 }
 
