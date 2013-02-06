@@ -98,7 +98,34 @@ nav {
 }
 
 
+
+
 /*--- Counter ----*/
 
 
+
+.getintouch .social li{
+	margin: 0px 0px 5px 0px;
+	float: left;
+	display: block;
+	clear: left;
+	
+	
+	
+}
+
+.getintouch .social img{
+	float: left;
+	display: block;
+	margin: 0px 10px 0px 0px;
+
+}
+
+
+.getintouch .social a.link{
+	float: right;
+	display: block;
+	margin: 6px 0px 0px 0px;
+	color: white;
+}
 

@@ -1,3 +1,6 @@
+
+
+
 .extdividerhor {
 	background-image: url(../images/divider_h_fade.png);
 	background-position: center bottom;
@@ -58,45 +61,10 @@ color: white;
 	
 }	*/
 
-
 	
 	
-section#two {
-	box-shadow: inset 0px 11px 20px -10px rgba(0,0,0,0.4),
-		        inset 0px -11px 8px -10px rgba(0,0,0,0.4); 
-	border-bottom: 1px solid #001;
-	border-top: 1px solid #3382D1;
-	background: #00417C;
-	color: #fff;
-	padding: 150px 0px 250px 0px;
-	}
-	
-	
-section#three {
-	
-	color: #fff;
-	padding: 200px 0px 200px 0px;
-	border-bottom: 1px solid #CCC;
-	/*use bkg linear background*/
-	/*box-shadow: inset 0 150px 250px rgba(0,0,0,.5);*/
-	
-	}
-	
-section#four {
-	box-shadow: inset 0px 11px 20px -10px rgba(0,0,0,0.4),
-		        inset 0px -11px 8px -10px rgba(0,0,0,0.4); 
-	border-bottom: 1px solid darkgray;
-	border-top: 1px solid #3382D1;
-	background: #00417C;
-	color: #fff;
-
-	padding: 150px 0px 200px 0px;
-	
-	
-	}
-	
-section#five {
-	color: black;
+section#five, section#three, section#seven {
+	color: #001;
 	/*use bkg linear background*/
 	/*box-shadow: inset 0 150px 250px rgba(0,0,0,.5);*/
 	padding: 150px 0px 200px 0px;
@@ -105,7 +73,7 @@ section#five {
 	
 	}
 	
-section#six{
+section#two, section#six, section#four{
 	box-shadow: inset 0px 11px 20px -10px rgba(0,0,0,0.4),
 		        inset 0px -11px 8px -10px rgba(0,0,0,0.4); 
 	border-bottom: 1px solid #001;
@@ -116,10 +84,10 @@ section#six{
 	
 	
 	}
-	
+
+
 	
 .modal h2, section h2{
-	color: #ffffff;
 	text-shadow: 0px 0px 0 rgb(187,187,187), 
 				 1px 1px 0 rgb(133,133,133),
 				 2px 2px 1px rgba(0,0,0,0.1),
@@ -680,8 +648,47 @@ a.buy-now.small:active {
 			color:red;
 		}
 
-.social li{
+
+
+/*  getintouch form */
+
+
+
+
+.getintouch form input{
+	height: 50px;
+	padding: 0px 15px 0px 20px;
+	width: 100%;
+	font-size: 1.5em;
+
+	
+	
+}
+
+.getintouch  button{
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 120px;
+  background: #00417C;
+  color: white	
+}
+
+
+footer .second.social li{
 	float: left;
-	margin: 0px 15px 0px 0px;
+	margin: 0px 5px 0px 0px;
+	
+	
+	
+}
+
+.contactus textarea{
+	width: 100%;
+	min-height: 150px;
+	padding: 10px 15px 0px 20px;
+	font-weight: lighter;
+	font-size: 1.5em;
+
 }
 
