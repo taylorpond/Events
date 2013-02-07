@@ -32,24 +32,14 @@ nav a {
 	text-shadow: 0px 1px 0px #E3E3E3;
 }
 
+.nav.one{
+	float: right;
+	padding: 0px 65px 0px 0px;
+
+	
+}
+
 .nav.one li{
-	float:right;
-	margin-right: 20px;
-	
-	
-	
-}
-
-.nav.one li.last{
-
-	margin-right: 105px;
-	
-	
-	
-}
-
-
-.nav.two li{
 	float:left;
 	margin-right: 20px;
 	
@@ -57,13 +47,24 @@ nav a {
 	
 }
 
-.nav.two li.last{
 
-	margin-left: 110px;
+
+
+.nav.two{
+	float: left;
+	padding: 0px 0px 0px 95px;
+	
+	
+}
+
+.nav.two li{
+	float:right;
+	margin-right: 20px;
 	
 	
 	
 }
+
 
 .calendar li{
 	color: #fff;
