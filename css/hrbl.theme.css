@@ -46,7 +46,7 @@
 	-webkit-text-size-adjust: 100%;
  	}
 /*  This section of selectors is for absolute positioning the footer on the bottom */
- 	html, body { height:100%; }
+ 	html, { height:100%; }
 	#wrap { min-height:100%; position:relative; }
 	.ie6 #wrap { height:100%; }
 	#wrap > .container { 
