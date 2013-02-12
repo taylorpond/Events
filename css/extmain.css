@@ -309,15 +309,25 @@ ol.calendar p.link{text-align:center;display: block;}
  * Day styles
  -------------------------*/
 ol.calendar li li{
-	color:black;
-	width:7em;
-	height:7em;
-	float:left;
-	margin:.2em;
-	padding:1em;
-	overflow:auto;
-	background: url('../images/day-bg.png') bottom right no-repeat; 
-	}
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	margin: 3px;
+	padding: 5px 5px 10px 5px;
+	position: relative;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	width: 140px;
+	height: 100px;
+	background-color: #97d9eb;
+	color: black;
+	border-bottom-right-radius: 6px;
+	box-shadow: 2px 2px rgba(0, 0, 3, 0.2);
+	line-height: 17px	
+	
+}
 
 /*
  * Day content (UL/OL & P)
@@ -325,20 +335,25 @@ ol.calendar li li{
 ol.calendar li li p	 {
 	font-size:.7em;
 	display:block;
+	border: none;
 	}
 ol.calendar li li ol{
 	width:auto;
 	}
 ol.calendar li li ul li,
 ol.calendar li li ol li{
-	font-size:.8em;
+	font-size:1em;
 	display:block;
 	height:auto;
 	width:auto;
 	background: none;
-	margin:0;padding:0;
+	margin:0px 0px 0px 5px;
+	padding:0;
 	float:none;
-	font-weight: bold;
+	font-weight: normal;
+	border: none;
+	box-shadow: none;
+	border-radius: none;
 	}
 
 /*
@@ -351,7 +366,10 @@ ol.calendar li li.holiday    {  }
  -------------------------*/
 ol.calendar li#lastmonth li,
 ol.calendar li#nextmonth li{
-	background: url('../images/day-bg-inactive.png');
+	background-color: rgba(150,217,235,0.47);
+	border-top-left-radius: 6px;
+	border-bottom-right-radius: 0px;
+	
 	}
 
 
