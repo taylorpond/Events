@@ -79,19 +79,18 @@ header {
 * html nav {
 	height: 1%;
 	}
-.language{
-	margin: 0px 20px 0px 0px;
-	
-}
+
 
 header .logo{
-	margin: 15px 0px 0px 0px;
+	margin: 12px 0px 0px 0px;
+	position: relative;
+	left: -6px;
 	
 }
 
 nav {
 	display: inline-block;
-	margin: 17px 0px 0px 0px;
+	margin: 12px 0px 0px 0px;
 	}
 
 /* Nav Styles 
@@ -182,7 +181,7 @@ section#one #slideshow{
 	height:350px;
 	background-color: #fff;
 	box-shadow: #414769 0px 0px 5px;
-	margin: 58px 0px 10px 0px;
+	margin:44px 0px 10px 0px;
 	}
 
 section#one #slideshow h2{
@@ -225,6 +224,11 @@ box-sizing:border-box; }
 /* language dropdown 
 
 ============================================================= */
+.language{
+	margin: 0px 21px 0px 0px;
+	
+}
+
 #dropdown { 
 	clear: right;
 	z-index:20;
