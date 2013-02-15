@@ -81,7 +81,7 @@ header {
 
 
 header .logo{
-	margin: 12px 0px 0px 0px;
+	margin: 5px 0px 0px 0px;
 	position: relative;
 	left: -6px;
 	
@@ -89,7 +89,7 @@ header .logo{
 
 nav {
 	display: inline-block;
-	margin: 12px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	}
 
 /* Nav Styles 
