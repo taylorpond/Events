@@ -43,9 +43,13 @@
 
 <body id="main" class="blue" data-spy="scroll" data-target="#navbar">
 	<header>
-		<div class="container">  
+	
+		<div class="container">
+		<img class="left logo" src="images/logo-herbalife-white.png">
 			<div class="row">  
-				<div id="dropdown" class="ddmenu right">
+				<div class="col4 right language ">
+				<div class="callback right"></div>
+				<div id="dropdown" class="ddmenu right ">
          Language 
 	        		<ul> 
 	        			<li><a href="#">Spanish</a></li> 
@@ -54,12 +58,8 @@
 	        			<li><a href="#">French</a></li> 
 	        		</ul>
 	        	</div> 
-	        	<div class="top-button-container">
-					<div class="left">
-						<div class="callback"></div>
-						<a href="#five" class="buy-now small left">BUY TICKETS HERE !</a>
-					</div>	
-				</div>
+				</div>	
+				
 			</div>
 			<div class="row">
 				<a href="#main"><img class="main-logo" width="180" src="images/extravaganza-seoul.png"></a>
@@ -87,12 +87,18 @@
 	<section id="one">
 		<div class="container">
 			<div class="row">
+			
 				<div class="col12 first" style="text-align:center;">
+				
 					<div id="slideshow">
+					
 						<h2>Join us February 13th 2013
 						</h2>
 						<p>Proin ac arcu ut quam dictum auctor. Vivamus libero magna,<br> rhoncus quis rutrum eu, pulvinar in turpis. Vivamus mollis est id odio<br> 
-						<a href="#">Learn More</a></p>
+						<a class="learnmore" href="#">Learn More</a></p>
+						<a href="#five" class="buy-now medium right ">BUY TICKETS NOW!</a>
+								
+						
 					</div>
 				</div>
 			</div>
@@ -139,8 +145,9 @@
 					<p>Proin ac arcu ut quam dictum auctor. Vivamus libero magna, rhoncus quis rutrum eu, pulvinar in turpis. Vivamus mollis est id odio lobortis id dapibus ante consectetur.</p>
 				</div>
 			</div>
-			<div id=rays></div>
+		
 		</div><!-- end block -->
+	
 	</section>
 
 <!-- EVENT INFO SECTION
@@ -369,6 +376,7 @@
 			<div class="row">
 				<div class="col4 offset3">
 					<a class="buy-now large ">BUY TICKETS!</a>	
+					
 				</div>
 			</div>
 		</div>
@@ -661,7 +669,7 @@ barOverColor: "#CCCCCC"		// Back bar color on over
 									var message = "";
 									
 									message += days + " day" + ( days==1 ? '':'s' ) + ", ";
-									message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
+									message += hours + " hour" + ( hours==1 ? '':'s' );
 									/* message += minutes + " min" + ( minutes==1 ? '':'s' ) + " and ";
 									message += seconds + " s  <br />";*/
 								

@@ -24,42 +24,13 @@
 
 body.blue{
 	background-color: #67B3E7;
+	background-image: url(../images/rays.png);
+	background-position-x: 50%;
+	background-position-y: -785px;
+	background-repeat: no-repeat;
 	}
 	
-#rays  { /* with animation properties */
-	background: url('../images/rays.png') 0 0 no-repeat;
-	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	background-image: url(../images/rays.png);
-	background-repeat-x: no-repeat;
-	background-repeat-y: no-repeat;
-	background-attachment: initial;
-	background-position-x: 0px;
-	background-position-y: 0px;
-	background-origin: initial;
-	background-clip: initial;
-	background-color: initial;
-	position: absolute;
-	top: -510px;
-	left: -320px;
-	width: 1000pt;
-	height: 1200pt;
-	-webkit-animation-name: spin;
-	-webkit-animation-duration: 40000ms;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	-moz-animation-name: spin;
-	-moz-animation-duration: 40000ms;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-timing-function: linear;
-	-ms-animation-name: spin;
-	-ms-animation-duration: 40000ms;
-	-ms-animation-iteration-count: infinite;
-	-ms-animation-timing-function: linear;
-	-o-transition: rotate(3600deg);
-	z-index: -10;
-	}
+
 
 #three .temp{
 	font-size: 116px;
@@ -108,6 +79,15 @@ header {
 * html nav {
 	height: 1%;
 	}
+.language{
+	margin: 0px 20px 0px 0px;
+	
+}
+
+header .logo{
+	margin: 15px 0px 0px 0px;
+	
+}
 
 nav {
 	display: inline-block;
@@ -202,7 +182,7 @@ section#one #slideshow{
 	height:350px;
 	background-color: #fff;
 	box-shadow: #414769 0px 0px 5px;
-	margin: 71px 0px 10px 0px;
+	margin: 58px 0px 10px 0px;
 	}
 
 section#one #slideshow h2{
@@ -221,7 +201,7 @@ section#one #slideshow p{
 	text-shadow:  1px 2px 2px rgba(0,0,0,1);
 	}
 
-section#one #slideshow a{
+ #slideshow a.learnmore{
 	padding: 10px 0px 0px 0px;
 	position: relative;
 	float: left;
@@ -246,12 +226,12 @@ box-sizing:border-box; }
 
 ============================================================= */
 #dropdown { 
-	right:19px;
+	clear: right;
 	z-index:20;
 	display: block; 
 	text-align:right;
 	padding: 3px 5px 4px 10px; 
-	margin: 5px 0px 0px 0px; 
+	margin: 0px 0px 0px 0px; 
 	position: relative; 
 	cursor: pointer; 
 	border-right: 4px solid #fff; 
@@ -627,9 +607,29 @@ a.buy-now.small:active {
 	top: 2px;
 	}
 
+a.buy-now.medium {
+	font-size: 1.2em;
+	padding: 8px 10px 7px 10px;
+	-webkit-box-shadow: 0px 6px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+	-moz-box-shadow: 0px 6px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+	box-shadow: 0px 6px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+	margin:145px 15px 0px 0px;
+
+	}
+
+a.buy-now.medium:active {
+	-webkit-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 8px rgba(0,0,0,.9);
+	-moz-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 8px rgba(0,0,0,.9);
+	box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 8px rgba(0,0,0,.9);
+	position: relative;
+	top: 5px;
+	}
+
+
+
 .top-button-container{
-	float: left;
-	text-align: left;
+	float: right;
+	text-align: right;
 	margin: 3px 10px 0px 0px;
 	}
 
@@ -732,8 +732,8 @@ color:red;
 	}
 
 .callback{
-	margin: 5px 0px 5px 0px;
-	font-weight: bold
+	margin: 2px 10px 2px 0px;
+	font-weight: bold;
 	}
 
 .herbalife-logo{
