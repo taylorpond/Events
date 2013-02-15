@@ -66,7 +66,7 @@
 				<nav id="navbar">
 					<div class="col6">
 						<ul class="nav one ">
-							<li ><a href="#one">HOME</a></li>
+							<li ><a href="#main">HOME</a></li>
 							<li ><a href="#two">EVENT INFO</a></li>
 							<li><a href="#three"> TRAVEL INFO</a></li>
 							<li ><a href="#four">AGENDA</a></li>	
@@ -577,27 +577,27 @@
 		// When the document is loaded...
 	    $(document).ready(function()
 		{	
-
+//
 			// Hide the toTop button when the page loads.
-			$("#toTop").css("display", "none");
+//			$("#toTop").css("display", "none");
 			
 			// This function runs every time the user scrolls the page.
-			$(window).scroll(function(){
+//			$(window).scroll(function(){
 
 				// Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
-				if($(window).scrollTop() > 0){
+//				if($(window).scrollTop() > 0){
 
 					// If it's more than or equal to 0, show the toTop button.
-					console.log("is more");
-					$("#toTop").fadeIn("slow");
-				}
-				else {
+//					console.log("is more");
+//					$("#toTop").fadeIn("slow");
+//				}
+//				else {
 					// If it's less than 0 (at the top), hide the toTop button.
-					console.log("is less");
-					$("#toTop").fadeOut("slow");
+//					console.log("is less");
+//					$("#toTop").fadeOut("slow");
 
-				}
-			});
+//				}
+//			});
 
 			// When the user clicks the toTop button, we want the page to scroll to the top.
 			$("#toTop").click(function(){
