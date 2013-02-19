@@ -142,12 +142,31 @@ section#one {
 	background:none;
 	padding: 80px 0px 90px 0px;
 	border-bottom: 1px solid #CCC;
+		
 	}
 
 /*  section#one	p, section#five	p {
 color: white;
 
 }	*/
+
+section#five{
+	background-image: url(../images/bg-tickets.png);
+	
+}
+
+
+section#three{
+	background-image: url(../images/bg-travel.png);
+	
+	
+}
+
+section#seven{
+	background-image: url(../images/bg-mail.png);
+	
+}
+
 
 section#five, section#three, section#seven {
 	color: #001;
@@ -165,6 +184,7 @@ section#two, section#six, section#four{
 	background: #00417C;
 	color: #fff;
 	padding: 150px 0px 200px 0px;	
+	background-image: url(../images/bg-noise.png);
 	}
 
 /*slides
