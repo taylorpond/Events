@@ -95,7 +95,7 @@
 	
 	
 		<div class="media-strip">
-		<h1>SEOUL KOREA</h1>
+		<h1 id="fittext1">SEOUL KOREA</h1>
 			
 		</div>
 		<div class="background-container">
@@ -737,8 +737,17 @@ $(function(){
 
 
 
+
+
+
 </script>
 
+<script src="js/jquery.fittext.js"></script>
+	<script type="text/javascript">
+		$("#fittext1").fitText();
+		$("#fittext2").fitText(1.2);
+		$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+	</script>
 
 
 <div id="toTop">

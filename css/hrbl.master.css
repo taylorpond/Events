@@ -160,6 +160,7 @@ section#three{
 	background-image: url(../images/bg-travel.png);
 	
 	
+	
 }
 
 section#seven{
@@ -194,8 +195,8 @@ section#two, section#six, section#four{
 
 section#one .media-strip{
 	height: 240px;
-	width: 100%;
-	margin: 0px 0px 0px 0px;
+	width: 85%;
+	margin: 0px auto 0px auto;
 	text-align: center;
 
 	
