@@ -724,6 +724,7 @@ a.buy-now.medium:active {
 	top: 75%;
 	right: 0;
 	width:100px;
+	z-index: 20;
 	}
 
 #toTop ul{
