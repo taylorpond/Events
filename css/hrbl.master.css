@@ -921,11 +921,6 @@ footer .second.social li{
     width: 100%;
     text-align: center;
     opacity: 0;
-    -webkit-animation: titleAnimation 20s linear infinite 0s;
-    -moz-animation: titleAnimation 20s linear infinite 0s;
-    -o-animation: titleAnimation 20s linear infinite 0s;
-    -ms-animation: titleAnimation 20s linear infinite 0s;
-    animation: titleAnimation 20s linear infinite 0s;
 }
 
 .cb-slideshow li:nth-child(1) span { background-image: url(../images/crowd/one.jpg) }
@@ -962,20 +957,22 @@ footer .second.social li{
 	}
 	8% {
 	    opacity: 1;
-	    -webkit-transform: scale(1.05);
+	    -webkit-transform: scale(1);
 	    -webkit-animation-timing-function: ease-out;
 	}
 	17% {
 	    opacity: 1;
-	    -webkit-transform: scale(1.1);
+	    -webkit-transform: scale(1);
 	}
 	25% {
 	    opacity: 0;
-	    -webkit-transform: scale(1.1);
+	    -webkit-transform: scale(1);
 	}
-	100% { opacity: 0 }
+	100% { opacity: 0 
+		
+	}
 }
-@-moz-keyframes imageAnimation { 
+/*@-moz-keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
 	    -moz-animation-timing-function: ease-in;
@@ -1054,15 +1051,15 @@ footer .second.social li{
 	    transform: scale(1.1);
 	}
 	100% { opacity: 0 }
-}
+}*/
 
 /* Show at least something when animations not supported */
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
 }
-@media screen and (max-width: 1140px) { 
+/*@media screen and (max-width: 1140px) { 
 	.cb-slideshow li div h3 { font-size: 100px }
 }
 @media screen and (max-width: 600px) { 
 	.cb-slideshow li div h3 { font-size: 50px }
-}
+}*/
