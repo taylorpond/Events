@@ -1,3 +1,17 @@
+.right { float:right; }
+.left { float:left; }
+.middle { vertical-align:middle; }
+.bottom { vertical-align:bottom; }
+.top { vertical-align:top; }
+.quiet { color:#CCC; }
+
+#forms { background:url(../images/worn_dots.png) repeat fixed; -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,.5); -moz-box-shadow:inset 0 0 5px rgba(0,0,0,.5); box-shadow:inset 0 0 5px rgba(0,0,0,.5); }
+#modals { background:url(../images/whitey.png) repeat fixed; -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,.5); -moz-box-shadow:inset 0 0 5px rgba(0,0,0,.5); box-shadow:inset 0 0 5px rgba(0,0,0,.5); }
+.box1 { display:inline-block; width:220px; padding:5px 10px; background:#eee; margin:5px 12px 5px 0;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box; }
+
 body.blue{
 	background-color: #67B3E7;
 	}
@@ -382,10 +396,17 @@ body,td,th: {
 	color: #FFF;
 	}
 
-.main-logo{
+div.main-logo{
+	/* positioning */
 	position: fixed;
-	margin: 0px 0px 0px 398px;
-	top: 5px;
+	margin: 0px auto 0px 398px;
+	top: 2px;
+	height: 260px;
+	width: 190px;
+	/* color */
+	background: url(../images/logo/extravaganza-seoul.png);/* change per webpage */
+	background-size:190px ;
+	background-repeat: no-repeat;
 	}
 
 .line-two{
