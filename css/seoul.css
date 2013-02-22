@@ -400,12 +400,12 @@ div.main-logo{
 	/* positioning */
 	position: fixed;
 	margin: 0px auto 0px 398px;
-	top: 2px;
+	top: 3px;
 	height: 260px;
-	width: 190px;
+	width: 180px;
 	/* color */
 	background: url(../images/logo/extravaganza-seoul.png);/* change per webpage */
-	background-size:190px ;
+	background-size:180px ;
 	background-repeat: no-repeat;
 	}
 
