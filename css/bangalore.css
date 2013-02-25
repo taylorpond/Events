@@ -133,10 +133,7 @@ section#one {
 		
 	}
 
-/*  section#one	p, section#five	p {
-color: white;
 
-}	*/
 
 section#five{
 	background-image: url(../images/bg-tickets.png);
@@ -202,7 +199,7 @@ margin: 100px auto 0px auto;
 	
 
 
-section#one .second p, section#one .last p{
+section#one p{
 	color: white
 	
 	
@@ -449,7 +446,7 @@ height: 110px;
 	margin: 5px 0px 5px 0px;
 	display: inline-block;
 	float: left;
-	padding: 0px;
+	padding: padding: 0px 0px 10px 0px;
 	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	}
@@ -473,7 +470,8 @@ height: 110px;
 
 .calendar ul, .calendar ol {
 	padding:0px;
-	margin: 0px
+	margin: 0px;
+	font-size: 9px;
 	}
 
 .calendar li{
@@ -503,8 +501,8 @@ ol.calendar li li{
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
-	width: 140px;
-	height: 100px;
+	width: 100px;
+	height: 80px;
 	background-color: #FECE81;
 	color: black;
 	border-bottom-right-radius: 6px;
@@ -516,7 +514,6 @@ ol.calendar li li{
 * Day content (UL/OL & P)
 -------------------------*/
 ol.calendar li li p	 {
-	font-size:.7em;
 	display:block;
 	border: none;
 	}
