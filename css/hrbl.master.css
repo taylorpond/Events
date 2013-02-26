@@ -27,3 +27,7 @@
 @import "guadalajara.css";
 /*@import "bangkok.css";*/
 /*@import "bangalore.css";*/
+
+body{
+	min-width: 1200px;
+}

@@ -11,6 +11,12 @@
 -webkit-box-sizing:border-box;
 -moz-box-sizing:border-box;
 box-sizing:border-box; }
+body{
+	min-width: 1200px;
+	
+	
+}
+
 
 body.blue{
 	/* color */
@@ -164,10 +170,10 @@ section#one {
 		
 	}
 
-/*  section#one	p, section#five	p {
+section#one p {
 color: white;
 
-}	*/
+}	
 
 section#five{
 	/* color */
@@ -236,7 +242,7 @@ text-shadow:0px 0px 0 rgb(240,240,240),1px 1px 0 rgb(226,226,226),2px 2px 0 rgb(
 }
 
 	
-section#one .second p, section#one .last p{
+section#one p{
 	color: white
 	
 }
@@ -483,7 +489,7 @@ height: 110px;
 	margin: 5px 0px 5px 0px;
 	display: inline-block;
 	float: left;
-	padding: 0px;
+	padding: 0px 0px 10px 0px;
 	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	}
@@ -507,7 +513,8 @@ height: 110px;
 
 .calendar ul, .calendar ol {
 	padding:0px;
-	margin: 0px
+	margin: 0px;
+	font-size: 9px;
 	}
 
 .calendar li{
@@ -515,7 +522,7 @@ height: 110px;
 	}
 
 ol.calendar{
-	width:65em;margin:0 auto;display:block; min-height: 200px;
+	width:100% ;margin:0 auto;display:block; min-height: 200px;
 	}
 ol.calendar li{
 	list-style:none;
@@ -537,8 +544,8 @@ ol.calendar li li{
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
-	width: 140px;
-	height: 100px;
+	width: 100px;
+	height: 80px;
 	background-color: #64BC4A;
 	color: black;
 	border-bottom-right-radius: 6px;
@@ -550,7 +557,6 @@ ol.calendar li li{
 * Day content (UL/OL & P)
 -------------------------*/
 ol.calendar li li p	 {
-	font-size:.7em;
 	display:block;
 	border: none;
 	}
