@@ -311,7 +311,7 @@ section#one #slideshow p{
 
 #dropdown { 
 	clear: right;
-	z-index:20;
+	z-index:10000;
 	display: block; 
 	text-align:right;
 	padding: 3px 5px 4px 10px; 
