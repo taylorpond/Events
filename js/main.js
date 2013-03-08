@@ -1,66 +1,47 @@
-
-	
-	
-   
 // Modal
-    $(document).ready(function() {
-      $('#myButton').click(function(e) {
-        e.preventDefault();
-        $('#myModal').reveal();
-      });
-    });
-
+$(document).ready(function() {
+$('#myButton').click(function(e) {
+e.preventDefault();
+$('#myModal').reveal();
+});
+});
 // To top
-
-		// When the document is loaded...
-	    $(document).ready(function()
-		{	
+// When the document is loaded...
+$(document).ready(function()
+{	
 //
-			// Hide the toTop button when the page loads.
+// Hide the toTop button when the page loads.
 //			$("#toTop").css("display", "none");
-			
-			// This function runs every time the user scrolls the page.
+
+// This function runs every time the user scrolls the page.
 //			$(window).scroll(function(){
 
-				// Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
+// Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
 //				if($(window).scrollTop() > 0){
 
-					// If it's more than or equal to 0, show the toTop button.
+// If it's more than or equal to 0, show the toTop button.
 //					console.log("is more");
 //					$("#toTop").fadeIn("slow");
 //				}
 //				else {
-					// If it's less than 0 (at the top), hide the toTop button.
+// If it's less than 0 (at the top), hide the toTop button.
 //					console.log("is less");
 //					$("#toTop").fadeOut("slow");
 
 //				}
 //			});
-
-			// When the user clicks the toTop button, we want the page to scroll to the top.
-			$("#toTop").click(function(){
-
-				// Disable the default behaviour when a user clicks an empty anchor link.
-				// (The page jumps to the top instead of // animating)
-				event.preventDefault();
-
-				// Animate the scrolling motion.
-				$("html, body").animate({
-					scrollTop:0
-				},"slow");
-
-			});
-			
-		});
-    
-// Slideshow
-
-
-
-
+// When the user clicks the toTop button, we want the page to scroll to the top.
+$("#toTop").click(function(){
+// Disable the default behaviour when a user clicks an empty anchor link.
+// (The page jumps to the top instead of // animating)
+event.preventDefault();
+// Animate the scrolling motion.
+$("html, body").animate({
+scrollTop:0
+},"slow");
+});
+});
 // Scrollbar
-
-
 jQuery(document).ready(function($) {
 buttonsClass("div.social_button");
 buttonsClass("div.scroll_button");
@@ -87,7 +68,6 @@ barColor: "#E6E6E6",		// Back bar color
 barOverColor: "#CCCCCC"		// Back bar color on over
 });
 });
-
 $(window).resize(function() {
 buttonsClass("div.social_button");
 buttonsClass("div.scroll_button");
@@ -114,67 +94,47 @@ barColor: "#E6E6E6",		// Back bar color
 barOverColor: "#CCCCCC"		// Back bar color on over
 });
 });
-
 // ticker script
-
-				(function($){
-				
-				$(window).load(function(){
-						
-						
-						$('#countdown').countdown({
-							timestamp	: {	'days'		: 1,
-											'hours'		: 0,
-											'minutes' 	: 0,
-											'seconds' 	: 10
-											},
-							duration	: 360,
-							
-							callback	: function(days, hours/*, minutes, seconds*/){
-			
-									var message = "";
-									
-									message += days + " day" + ( days==1 ? '':'s' ) + ", ";
-									message += hours + " hour" + ( hours==1 ? '':'s' );
-									/* message += minutes + " min" + ( minutes==1 ? '':'s' ) + " and ";
-									message += seconds + " s  <br />";*/
-								
-									$('.callback').html(message);
-								}
-							})
-							
-					})
-				})(jQuery)	
-				
-				
-
-
+(function($){
+$(window).load(function(){
+$('#countdown').countdown({
+timestamp	: {	'days'		: 1,
+'hours'		: 0,
+'minutes' 	: 0,
+'seconds' 	: 10
+},
+duration	: 360,
+callback	: function(days, hours/*, minutes, seconds*/){
+var message = "";
+message += days + " day" + ( days==1 ? '':'s' ) + ", ";
+message += hours + " hour" + ( hours==1 ? '':'s' );
+/* message += minutes + " min" + ( minutes==1 ? '':'s' ) + " and ";
+message += seconds + " s  <br />";*/
+$('.callback').html(message);
+}
+})
+})
+})(jQuery)	
 // dropdown language
-
 $("#dropdown").on("click", function(e){ e.preventDefault(); if($(this).hasClass("open")) { $(this).removeClass("open"); $(this).children("ul").slideUp("fast"); } else { $(this).addClass("open"); $(this).children("ul").slideDown("fast"); } });
-
 $("#dropdown-mobile").on("click", function(e){ e.preventDefault(); if($(this).hasClass("open")) { $(this).removeClass("open"); $(this).children("ul").slideUp("fast"); } else { $(this).addClass("open"); $(this).children("ul").slideDown("fast"); } });
-
 // Scroll to function 
-
-
 $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 350);
-            return false;
-        }
-    }
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+|| location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top
+}, 350);
+return false;
+}
+}
 });
 
 // Scrollspy
-	$('[data-spy="scroll"]').each(function () {
- var $spy = $(this).scrollspy('refresh')
+$('[data-spy="scroll"]').each(function () {
+var $spy = $(this).scrollspy('refresh')
 });
 
