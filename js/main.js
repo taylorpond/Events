@@ -67,6 +67,34 @@ buttonsClass("div.scroll_button");
 $("#scrollbar1").scrollbar({	type: "scrollbar",			// ->scrollbar || mousePosition || dragAndDrop
 //+++++++++++++MAIN PROPERTIES++++++++++++++//
 height:220, 				// Height of the content's mask block
+
+// Width fixed number or auto of the content
+scrollerEase:7, 			// Scroll ease
+dragVertical:true,			// Drag Verticaly or not
+dragHorizontal:false,		// Drag Horizontaly or not
+//++++++++SCROLL BAR TYPE PROPERTIES++++++++//
+barWidth:5, 				// Width of the scroller bars
+draggerVerticalSize:"auto",	// Height of the dragger, can be fixed or auto
+draggerHorizontalSize:"auto",
+roundCorners:0,			// Bars round corners amplitude
+distanceFromBar: 5,			// Distance between the bars and the content
+mouseWheel: true,			// Wheter to use or not mouse wheel detection
+mouseWheelOrientation: "vertical",	// Wheter to use or not mouse wheel detection
+mouseWheelSpeed: 13,		// Mouse wheel scroll speed
+draggerColor: "#111111",		// Dragger color
+draggerOverColor: "#a1dc13",	// Dragger color on over
+barColor: "#E6E6E6",		// Back bar color
+barOverColor: "#CCCCCC"		// Back bar color on over
+});
+});
+
+$(window).resize(function() {
+buttonsClass("div.social_button");
+buttonsClass("div.scroll_button");
+$("#scrollbar1").scrollbar({	type: "scrollbar",			// ->scrollbar || mousePosition || dragAndDrop
+//+++++++++++++MAIN PROPERTIES++++++++++++++//
+height:220, 				// Height of the content's mask block
+
 // Width fixed number or auto of the content
 scrollerEase:7, 			// Scroll ease
 dragVertical:true,			// Drag Verticaly or not
