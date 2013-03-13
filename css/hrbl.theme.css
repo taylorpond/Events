@@ -46,7 +46,7 @@
 	-webkit-text-size-adjust: 100%;
  	}
 /*  This section of selectors is for absolute positioning the footer on the bottom */
- 	html, { height:100%; }
+ 	html { height:100%; }
 	#wrap { min-height:100%; position:relative; }
 	.ie6 #wrap { height:100%; }
 	#wrap > .container { 
@@ -144,7 +144,7 @@
 /*	Code  */
 	code, pre { padding: 0 3px 2px; font-family: Menlo, Monaco, "Courier New", monospace; font-size:13px; color:#555; -webkit-border-radius:3px; border-radius:3px; }
 	code { padding: 3px 4px; color: #d14; background-color: #f7f7f9; border: 1px solid #e1e1e8; }
-	pre { display:block; padding:10px; margin: 0 0 10px; font-size: 12px; line-height: 20px; background-color: #f5f5f5; border: 1px solid #ccc; // fallback for IE7-8 border: 1px solid rgba(0,0,0,.15);
+	pre { display:block; padding:10px; margin: 0 0 10px; font-size: 12px; line-height: 20px; background-color: #f5f5f5; border: 1px solid #ccc; /* fallback for IE7-8*/ border: 1px solid rgba(0,0,0,.15);
 		-webkit-border-radius:4px; border-radius:4px;
 		white-space: pre;
 		white-space: pre-wrap;
@@ -278,7 +278,7 @@ dd { margin-left:10px; }
 	table [class*="span"] {
 		float: none;
 		margin-left: 0;
-		display:static;
+		/*display:static;*/
 	}
 
 
@@ -331,7 +331,7 @@ dd { margin-left:10px; }
   thead { display: table-header-group; } /* h5bp.com/t */
   tr, img { page-break-inside: avoid; }
   img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
+  @page { margin: 0.5em; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }

@@ -47,7 +47,7 @@ header {
 	top: 0;
 	right: 0;
 	left: 0; /* z-index is found in hrbl.theme.css */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 )"; /* IE6-9 */
 	background-color: #66B3E7;
 	background-image: -moz-linear-gradient(left, right, from(#6EC4FF), color-stop(50%, #6DB9EA), to(white));
 	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #66B3E7), color-stop(50%, #95D2FF), color-stop(100%, #66B3E7));	
@@ -389,7 +389,7 @@ box-sizing:border-box; }
 	0px 0px 1px rgba(0,0,0,.2);
 	}
 
-body,td,th: {
+body,td,th {
 	color: #FFF;
 	}
 
@@ -554,7 +554,7 @@ ol.calendar li li ol li{
 	font-weight: normal;
 	border: none;
 	box-shadow: none;
-	border-radius: none;
+	border-radius: 0;
 	}
 
 /*
@@ -863,7 +863,7 @@ footer { background:#555; width:100%; color:#FFF !important; background-image:ur
 
 footer h4, footer li{
 	color: #666;
-	text-shadow: black 1px;
+	text-shadow: 0 -1px 0 black;
 	}
 
 footer .second.social li{
@@ -903,7 +903,7 @@ footer .second.social li{
     color: transparent;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
