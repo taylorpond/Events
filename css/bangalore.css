@@ -464,6 +464,17 @@ height: 110px;
 	margin: 5px 10px 5px 10px;
 	padding: 0px 5px 0px 0px;
 	}
+.content li a {
+    color:#333;
+    display:block;
+    }
+.content li a:hover{
+    color:#000;
+    }
+#one .content p.no-downloads {
+    padding:20px; 
+	color:#333;
+    }
 
 /* CALENDAR
 ===================================================== */
