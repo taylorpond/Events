@@ -6,8 +6,8 @@
 @import "hrbl.theme.css"; /* All styles in hrbl.master.css are built on top of hrbl.theme.css */
 @import "hrbl.skeleton.css"; /* Grid */
 
-/* Components: Font-icons */
-@import "hrbl.font-icons.css";
+/* Components: Font-icons 
+@import "hrbl.font-icons.css";*/
 
 /* Components: Buttons */
 @import "hrbl.buttons.css";
