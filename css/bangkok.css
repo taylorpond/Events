@@ -408,10 +408,10 @@ div.main-logo{
 	position: fixed;
 	margin: 0px auto 0px 398px;
 	top: 2px;
-	height: 260px;
+	height: 199px;
 	width: 190px;
 	/* color */
-	background: url(../images/logo/extravaganza-bangkok.png);/* change per webpage */
+	background: url(../images/logo/extravaganza-bangkok-small.png);/* change per webpage */
 	background-size:190px ;
 	background-repeat: no-repeat;
 	}

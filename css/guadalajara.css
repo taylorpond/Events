@@ -556,10 +556,10 @@ div.main-logo{
 	position: fixed;
 	margin: 0px auto 0px 398px;
 	top: 7px;
-	height: 260px;
+	height: 162px;
 	width: 190px;
 	/* color */
-	background: url(../images/logo/extravaganza-guadalajara.png);/* change per webpage */
+	background: url(../images/logo/extravaganza-guadalajara-small.png);/* change per webpage */
 	background-size:190px ;
 	background-repeat: no-repeat;
 	z-index: 100;

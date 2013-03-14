@@ -398,10 +398,10 @@ div.main-logo{
 	position: fixed;
 	margin: 0px auto 0px 398px;
 	top: 3px;
-	height: 260px;
+	height: 199px;
 	width: 180px;
 	/* color */
-	background: url(../images/logo/extravaganza-seoul.png);/* change per webpage */
+	background: url(../images/logo/extravaganza-seoul-small.png);/* change per webpage */
 	background-size:180px ;
 	background-repeat: no-repeat;
 	}
