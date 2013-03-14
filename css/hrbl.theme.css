@@ -40,7 +40,7 @@
 	background: #FFF;
 	font-size: 12px;
 	line-height: 19px;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	color: #333;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
