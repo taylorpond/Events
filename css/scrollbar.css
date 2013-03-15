@@ -1,6 +1,7 @@
 .scrollbar .content{
 	position: absolute;
 	background-color:rgba(248,248,255,0.8);
+	width:300px;
 }
 
 .scrollbar {
@@ -82,9 +83,8 @@ div.scroll_button span.hover{
 	position: absolute;
 	cursor:pointer;
 }
-
-
 #scrollbar1{
-	margin: 20px 0px 0px 0px;
-	
+	margin: 20px 0px 15px 0px;
 }
+
+

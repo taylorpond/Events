@@ -53,7 +53,7 @@ header {
 	padding: 0;
 	position: fixed;
 	/* color */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E86C1F', endColorstr='#FECE81',GradientType=0 ); /* IE6-9 */
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#E86C1F', endColorstr='#FECE81',GradientType=0 )"; /* IE6-9 */
 	background-color: #FAA633;
 	background-image: -moz-linear-gradient(left, right, from(#E86C1F), color-stop(50%, #FECE81), to(white));
 	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #E86C1F), color-stop(50%, #FECE81), color-stop(100%, #E86C1F));
@@ -99,7 +99,7 @@ nav a {
 	color: #000000;
 	/* text */
 	font-weight: bold;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-style: normal;
 	font-size: 15px;
 	text-decoration: none;
@@ -144,7 +144,7 @@ nav .nav a, nav .nav a:visited { color:#001; text-decoration: none; outline: 0; 
 	color: white;
 	/* text */
 	text-shadow: 0px 1px 1px grey;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	}
 
 section{
@@ -203,7 +203,7 @@ section#two, section#six, section#four{
 	box-shadow: inset 0px 11px 20px -10px rgba(0,0,0,0.2),
 	inset 0px -11px 8px -10px rgba(0,0,0,0.4); 
 	/* change per site */
-	border-bottom: 1px solid rgba(0,0,0,0.9),;
+	border-bottom: 1px solid rgba(0,0,0,0.9);
 	/* change per site */
 	border-top: 1px solid #FECE81;
 	/* change per site */
@@ -251,7 +251,7 @@ section#one{
 	width: 100%;
 	margin: 0px;
 	padding: 20px 0px 20px 0px;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.8);
 	
 }
 
@@ -399,7 +399,7 @@ section#one #slideshow p{
 	0px 0px 1px rgba(0,0,0,.2);
 	}
 
-body,td,th: {
+body,td,th {
 	color: #FFF;
 	}
 
@@ -408,10 +408,10 @@ div.main-logo{
 	position: fixed;
 	margin: 0px auto 0px 398px;
 	top: 2px;
-	height: 260px;
+	height: 199px;
 	width: 190px;
 	/* color */
-	background: url(../images/logo/extravaganza-bangkok.png);/* change per webpage */
+	background: url(../images/logo/extravaganza-bangkok-small.png);/* change per webpage */
 	background-size:190px ;
 	background-repeat: no-repeat;
 	}
@@ -498,6 +498,17 @@ height: 110px;
 	margin: 5px 10px 5px 10px;
 	padding: 0px 5px 0px 0px;
 	}
+.content li a {
+    color:#333;
+    display:block;
+    }
+.content li a:hover{
+    color:#000;
+    }
+#one .content p.no-downloads {
+    padding:20px; 
+	color:#333;
+    }
 
 /* CALENDAR
 ===================================================== */
@@ -568,7 +579,7 @@ ol.calendar li li ol li{
 	font-weight: normal;
 	border: none;
 	box-shadow: none;
-	border-radius: none;
+	border-radius: 0;
 	}
 
 /*
@@ -882,7 +893,7 @@ footer { background:#555; width:100%; color:#FFF !important; background-image:ur
 
 footer h4, footer li{
 	color: #666;
-	text-shadow: black 1px;
+	text-shadow: 0 -1px 0 black;
 	}
 
 footer .second.social li{
@@ -922,7 +933,7 @@ footer .second.social li{
     color: transparent;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
