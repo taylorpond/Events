@@ -1,0 +1,86 @@
+
+
+header {
+	height: 125px; /* match line on logo */
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac142', endColorstr='#EEB111',GradientType=0 )"; /* IE6-9 */
+	background-color: #f79d5b;
+	background-image: -moz-linear-gradient(left, right, from(#ef5b49), color-stop(50%, #f79d5b), to(white));
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #ef5b49), color-stop(50%, #f79d5b), color-stop(100%, #ef5b49));
+	/*other */	
+	border-bottom: 1px solid #873032;
+}
+
+.nav.two{
+	padding: 0px 0px 0px 100px;
+}
+
+@media only screen and (max-width: 767px) {
+header {
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac142', endColorstr='#EEB111',GradientType=0 )"; /* IE6-9 */
+	background-color: rgb(247, 157, 91);
+	/*other */	
+	border-bottom: 1px solid #006F3C;
+	}	
+	
+	
+	
+}
+/* SECTION STYLES
+===================================================== */
+
+section#three, section#five,  section#seven {
+	/* change per site */
+	border-bottom: 1px solid #CCC;	
+	/* change per site */
+	background-color: #f79d5b;
+	color: #001;
+	/*use bkg linear background*/
+}
+section#two, section#six, section#four{
+	/* change per site */
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	/* change per site */
+	border-top: 1px solid #f38e96;
+	/* change per site */
+	background: #b03135;
+}
+
+div.main-logo{
+	margin: 0px auto 0px 398px;
+	height: 162px;
+	width: 190px;
+	background: url(../images/logo/extravaganza-guadalajara-small.png);/* change per webpage */
+	background-size:190px ;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	div.main-logo{
+	margin: 0px auto 0px 304px; height: 240px; width: 170px; background-size:170px ;}
+	}
+	
+@media only screen and (max-width: 767px){
+	div.main-logo{margin: 0px auto 0px 235px;}
+	
+	
+	
+}
+
+/* CALENDAR
+===================================================== */
+ol.calendar li li{
+	background-color: #f79d5b;
+	
+	
+}
+
+/* Buynow button ------------------------------------*/
+a.buy-now{
+	background-color: #eb363f;
+	}
+/*  Getintouch form
+
+=========================================================  */
+
+.getintouch  button{
+	background: #eb4041;
+	}
