@@ -23,12 +23,14 @@
 @import "hrbl.reveal.css";
 
 /* Css Region*/
-@import "_seoul.css";
-/*@import "_guadalajara.css";
+/*@import "_seoul.css";
+@import "_guadalajara.css";
 @import "_bangkok.css";
 @import "_bangalore.css";
 @import "_istanbul.css";
-@import "_cologne.css";*/
+@import "_cologne.css";
+@import "_krasnoyarsk.css"*/
+@import "_stpetersburg.css";
 body{
 	min-width: 1200px;
 }
@@ -952,6 +954,27 @@ a.buy-now.medium:active {
 	right: 110px;
 	}
 
+.twitter-box {
+	min-height:100px;
+	height:auto !important;
+	height:100px;
+	padding-bottom:10px;
+	display: block;
+	
+}
+
+#twitter_update_list {
+padding: 0;
+overflow: hidden;
+font-family: Georgia;
+font-size: 14px;
+font-style: italic;
+color: #31353d;
+line-height: 16px;
+font-weight:bold;
+}
+
+
 .getintouch .social li{
 	margin: 3px 0px 5px 0px;
 	float: left;
@@ -965,6 +988,11 @@ a.buy-now.medium:active {
 	margin: 0px 10px 0px 0px;
 	}
 
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	.getintouch .social img{
+	margin: 0px 2px 0px 0px;
+	}
+}
 
 .getintouch .social a.link{
 	float: right;
