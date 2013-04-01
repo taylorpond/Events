@@ -1,0 +1,84 @@
+header {
+	height: 125px; /* match line on logo */
+filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#E86C1F', endColorstr='#FECE81',GradientType=0 )"; /* IE6-9 */
+	background-color: #F08A1D;
+	background-image: -moz-linear-gradient(left, right, from(#E86C1F), color-stop(50%, #FECE81), to(white));
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #D06F19), color-stop(50%, #FFD456), color-stop(100%, #D06F19));	
+
+	/*other */	
+	border-bottom: 1px solid #D06F19;
+}
+
+.nav.two{
+	padding: 0px 0px 0px 122px;
+}
+
+@media only screen and (max-width: 767px) {
+header {
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac142', endColorstr='#EEB111',GradientType=0 )"; /* IE6-9 */
+	background-color: #F08A1D;
+	/*other */	
+	border-bottom: 1px solid #006F3C;
+	}	
+	
+	
+	
+}
+/* SECTION STYLES
+===================================================== */
+
+section#three, section#five,  section#seven {
+	/* change per site */
+	border-bottom: 1px solid #CCC;		
+	/* change per site */
+	background-color:#FFD456;
+	color: #001;
+}
+section#two, section#six, section#four{
+	/* change per site */
+	border-bottom: 1px solid rgba(0,0,0,0.9);
+	/* change per site */
+	border-top: 1px solid #E86C1F;
+	/* change per site */
+	background: #D06F19;
+}
+
+div.main-logo{
+	margin: 0px auto 0px 398px;
+	height: 180px;
+	width: 215px;
+	background: url(../images/logo/extravaganza-bangalore-small.png);/* change per webpage */
+	background-size:210px ;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	div.main-logo{
+	margin: 0px auto 0px 304px; height: 240px; width: 170px; background-size:170px ;}
+	}
+	
+@media only screen and (max-width: 767px){
+	div.main-logo{margin: 0px auto 0px 235px;}
+	
+	
+	
+}
+
+/* CALENDAR
+===================================================== */
+ol.calendar li li{
+	background-color: #FECE81;
+	
+	
+}
+
+/* Buynow button ------------------------------------*/
+a.buy-now{
+	background-color: rgba(219,87,5,1);
+	}
+/*  Getintouch form
+
+=========================================================  */
+
+.getintouch  button{
+	background: #F37320;
+	}
