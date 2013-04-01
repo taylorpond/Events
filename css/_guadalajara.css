@@ -1,0 +1,83 @@
+header {
+	height: 125px; /* match line on logo */
+filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac142', endColorstr='#EEB111',GradientType=0 )"; /* IE6-9 */
+	background-color: #64BC4A;
+	background-image: -moz-linear-gradient(left, right, from(#7AC142), color-stop(50%, #EEB111), to(white));
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #00A15F), color-stop(50%, #64BC4A), color-stop(100%, #00A15F));
+	/*other */	
+	border-bottom: 1px solid #006F3C;
+}
+
+.nav.two{
+	padding: 0px 0px 0px 100px;
+}
+
+@media only screen and (max-width: 767px) {
+header {
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac142', endColorstr='#EEB111',GradientType=0 )"; /* IE6-9 */
+	background-color: #64BC4A;
+	/*other */	
+	border-bottom: 1px solid #006F3C;
+	}	
+	
+	
+	
+}
+/* SECTION STYLES
+===================================================== */
+
+section#three, section#five,  section#seven {
+	/* change per site */
+	border-bottom: 1px solid #CCC;	
+	/* change per site */
+	background-color: #64BC4A;
+	color: #001;
+
+}
+section#two, section#six, section#four{
+	border-bottom: 1px solid rgba(0,0,0,0.9);
+	/* change per site */
+	border-top: 1px solid #64BC4A;
+	/* change per site */
+	background: #00A15F;
+}
+
+div.main-logo{
+	margin: 0px auto 0px 398px;
+	height: 162px;
+	width: 190px;
+	background: url(../images/logo/extravaganza-guadalajara-small.png);/* change per webpage */
+	background-size:190px ;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	div.main-logo{
+	margin: 0px auto 0px 304px; height: 240px; width: 170px; background-size:170px ;}
+	}
+	
+@media only screen and (max-width: 767px){
+	div.main-logo{margin: 0px auto 0px 235px;}
+	
+	
+	
+}
+
+/* CALENDAR
+===================================================== */
+ol.calendar li li{
+	background-color: #64BC4A;
+	
+	
+}
+
+/* Buynow button ------------------------------------*/
+a.buy-now{
+	background-color: rgba(219,87,5,1);
+	}
+/*  Getintouch form
+
+=========================================================  */
+
+.getintouch  button{
+	background: #E86C1F;
+	}
