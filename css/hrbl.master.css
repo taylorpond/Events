@@ -1187,6 +1187,110 @@ padding-right: 20px;
 	.cb-slideshow li div h3 { font-size: 50px }
 }*/
 
+/* ECARD AND SIGN UP FORMS  */
+.getintouch input.submit{
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	width: 120px;
+	color: white;
+	font-size:inherit;
+	height:auto;
+	cursor:pointer;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+.getintouch form select {
+	padding: 11px 5px 11px 18px;
+	width: 100%;
+	font-size: 1.5em;
+	color:#555;
+	font-family: "Open Sans", Arial, sans-serif;
+	background:#FFF url(../images/dropdown-arrow.png) no-repeat right 0px;
+    margin:0;
+	height:auto;
+	}
+.getintouch form select:hover {
+	background:#FFF url(../images/dropdown-arrow.png) no-repeat right -29px;
+}
+.getintouch a { color:#fff; }
+.getintouch form input, .getintouch form input[type="text"], .getintouch form input[type="password"], .getintouch form input[type="email"], .getintouch form textarea {
+    margin:0;
+	height:auto;
+	padding:12px 15px 12px 20px;
+}
+.getintouch form .sendcopy input { 
+    width:auto; 
+    height:auto; 
+    padding:0; 
+    margin:0 5px 0 0; 
+}
+.getintouch form .sendcopy label { 
+    display:inline; 
+}
+#add { 
+    cursor:pointer; 
+    color:#fff; 
+    font-size:11px; 
+    background:url(../images/add-icon.png) no-repeat left; 
+    padding:0 0 0 25px; 
+    height:24px; 
+    display:inline-block; 
+    float:right; 
+    line-height:24px; 
+}
+.getintouch form textarea.error { 
+    background:#fcc; 
+    border:1px solid red; 
+}
+#errors { 
+    background:#fcc url(../images/error-icon-lrg.gif) no-repeat 18px 10px; 
+    border:1px solid red; 
+    color:#660000; 
+    padding:15px 65px; 
+    margin:0 0 15px 0; 
+    display:none; 
+}
+#errors ul { 
+    padding:0; 
+    margin:0; 
+}
+#ecard-sample { 
+    height:366px; 
+    padding-left:261px; 
+    line-height:366px; 
+    font-size:20px; 
+    font-family:Arial, Sans-Serif; 
+    width:339px; 
+    margin:0 0 20px; 
+}
+.loading { 
+    padding:10px; 
+    width:24px; 
+    height:24px; 
+    background:#000; 
+    position:fixed; 
+    top:50%; 
+    left:50%; 
+    margin:-22px 0 0 -22px; 
+    -moz-border-radius:7px; 
+    -webkit-border-radius:7px; 
+    border-radius:7px; 
+    -moz-box-shadow:0 0 5px rgba(0,0,0,.5); 
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,.5); 
+    box-shadow:0 0 5px rgba(0,0,0,.5); 
+}
+.getintouch h4 { 
+    margin-bottom:5px; 
+}
+.signup { 
+    padding-top:30px; 
+}
+.subscribe .col4, .subscribe .col5 { 
+    padding-bottom:20px; 
+}
+
+
 /*! fancyBox v2.1.4 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,
