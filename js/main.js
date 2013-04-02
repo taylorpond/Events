@@ -184,4 +184,7 @@ $(document).ready(function(e) {
 		});
 	});
 	
+	// Gallery
+	$("#gallery a").fancybox();
+	
 });
