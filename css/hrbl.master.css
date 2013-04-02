@@ -23,14 +23,22 @@
 @import "hrbl.reveal.css";
 
 /* Css Region*/
-/*@import "_seoul.css";
-@import "_guadalajara.css";
+@import "_seoul.css";
+/*@import "_guadalajara.css";
 @import "_bangkok.css";
 @import "_bangalore.css";
 @import "_istanbul.css";
 @import "_cologne.css";
-@import "_krasnoyarsk.css"*/
+@import "_krasnoyarsk.css"
 @import "_stpetersburg.css";
+@import "_africa.css";
+@import "_nanjing.css";
+@import "_ulan.css";
+@import "_brazil.css";
+@import "_losangeles.css";
+@import "_southamerica.css";
+@import "_lasvegas.css";*/
+
 body{
 	min-width: 1200px;
 }
@@ -158,30 +166,18 @@ nav .nav a, nav .nav a:visited { color:#001; text-decoration: none; outline: 0; 
 
 
 
-.nav.one{
-	/* positioning */
-	float: right;
+.nav{
 	/*display & box model */
-	padding: 0px 60px 0px 0px;
+	padding: 0px 0px 0px 75px;
 	}
-.nav.one li{
+.nav li{
 	/* positioning */
 	float:left;
 	margin-right: 20px;
 	}
-
-.nav.two{
-	/* positioning */
-	float: left;
-	/*display & box model */
-	padding: 0px 0px 0px 100px;
-	}
-
-.nav.two li{
-	/* positioning */
-	float:left;
-	margin-right: 20px;
-	}
+.nav li.five {
+    padding-left:180px;
+}
 
 .nav li.active  a,
 .nav li:hover > a {
@@ -203,31 +199,18 @@ nav .nav a, nav .nav a:visited { color:#001; text-decoration: none; outline: 0; 
 	#navbar{
 		padding: 4px 0px 0px 0px;
 		}
-	
-	.nav.one li{
+    .nav{
+	    /*display & box model */
+	    padding: 0px 0px 0px 60px;
+	    }
+	.nav li{
 		/* positioning */
 		float:left;
 		margin-right: 10px;
 		}
-	
-	.nav.two{
-		/* positioning */
-		float: left;
-		/*display & box model */
-		margin: 0px 0px 0px 100px
-		}
-	.nav.two li{
-		/* positioning */
-		float:left;
-		margin-right: 10px;
-		}
-	.nav.one,.nav.two{
-		float: none;
-		padding: 0;
-		
-		
-	}
-
+    nav li a{
+	    font-size: 12px;
+    }
 }
 
 
@@ -242,7 +225,7 @@ header {
 	/*display & box model */
 	width: 100%;
 	height: inherit; /* match line on logo */
-	padding: 0;
+	padding: 0 0 12px;
 	position: relative;
 	/* color */
 	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,.2);
@@ -250,32 +233,20 @@ header {
 	box-shadow: 0px 0px 4px rgba(0,0,0,.2); 
 	text-align: center;
 	}
-
-
-.container.one{
-	display: none;
-}
-.container.two{
-	display: block;
-}
-
-nav{ 
-
-}
-nav li{
-	float: left;
-	padding: 10px;
-}
-
-nav li a:hover{
-	color: #fff;
-	text-shadow: none;
-}	
-nav li a{
-	font-size: 12px;
-	
-	
-}
+    header .row { margin-bottom:0; }
+    .main-logo { display:none; }
+    .nav{
+	    padding: 0px;
+	    }
+    .nav li{
+	    margin-right: 20px;
+	    }
+	.nav li.main { display:none; }
+    .nav li.five {
+        padding-left:0px;
+        }
+    .nav li a { font-size:12px; }
+    .col4 { width:50%; }
 }
 
 section{
@@ -657,6 +628,14 @@ ol.calendar li{
 	list-style:none;
 }
 ol.calendar p.link{text-align:center;display: block;}
+
+/*
+* Media Section
+-------------------------*/
+.picture-gallery{
+	margin: 10px 0px 0px 0px;
+	
+}
 
 
 /*
