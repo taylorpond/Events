@@ -1,0 +1,69 @@
+header {
+	height: 138px; /* match line on logo */
+filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 )"; /* IE6-9 */
+	background-color: #00B273;
+	background-image: -moz-linear-gradient(left, right, from(#00B273), color-stop(50%, #009B7A), to(#00B273));
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #00B273), color-stop(50%, #009B7A), color-stop(100%, #00B273));
+	/*other */	
+	border-bottom: 1px solid #B6DBA4;
+}
+.nav.two{
+	padding: 0px 0px 0px 100px;
+}
+@media only screen and (max-width: 767px) {
+header {
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ac142', endColorstr='#EEB111',GradientType=0 )"; /* IE6-9 */
+	background-color: #00B273;
+	/*other */	
+	border-bottom: 1px solid #B6DBA4;
+	}	
+}
+/* SECTION STYLES
+===================================================== */
+section#three, section#five,  section#seven {
+	/* change per site */
+	border-bottom: 1px solid #B6DBA4;	
+	/* change per site */
+	background-color:#97CE8A ;
+	color: #001;
+}
+section#two, section#six, section#four{
+	border-bottom: 1px solid #009B7A;
+	/* change per site */
+	border-top: 1px solid #00B273;
+	/* change per site */
+	background: #00735B;
+}
+div.main-logo{
+	margin: 0px auto 0px 398px;
+	height: 199px;
+	width: 180px;
+	background: url(../images/logo/extravaganza-seoul-small.png);/* change per webpage */
+	background-size:180px ;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	div.main-logo{
+	margin: 0px auto 0px 304px; height: 240px; width: 170px; background-size:170px ;}
+	}
+	
+@media only screen and (max-width: 767px){
+	div.main-logo{margin: 0px auto 0px 235px;}
+}
+
+/* CALENDAR
+===================================================== */
+
+ol.calendar li li{
+	background-color: #B6DBA4;
+}
+
+/* Buynow button ------------------------------------*/
+a.buy-now{
+	background-color: rgba(219,87,5,1);
+}
+/*  Getintouch form
+
+=========================================================  */
+.getintouch  button{
+	background: #009B7A;
+}
